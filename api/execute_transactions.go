@@ -50,7 +50,7 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 			"minister":   0,
 			"department": 0,
 		}
-	} else if processType == "person" {
+	} else if processType == "person" || processType == "secretary" {
 		entityCounters = map[string]int{
 			"citizen": 0,
 		}
@@ -128,11 +128,14 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 			// Check if the transaction type matches the process type
 			childType := transaction["child_type"].(string)
 			if (processType == "organisation" && (childType == "minister" || childType == "department")) ||
-				(processType == "person" && childType == "citizen") {
+				(processType == "person" && childType == "citizen") ||
+				(processType == "secretary" && childType == "citizen") {
 				var err error
 
 				if processType == "person" && childType == "citizen" {
 					entityCounters[childType], err = c.AddPersonEntity(transaction, entityCounters)
+				} else if processType == "secretary" && childType == "citizen" {
+					entityCounters[childType], err = c.AddSecretaryEntity(transaction, entityCounters)
 				} else {
 					entityCounters[childType], err = c.AddOrgEntity(transaction, entityCounters)
 				}
@@ -232,14 +235,14 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 func extractPresidentNameFromPath(filePath string) (string, error) {
 	pathParts := strings.Split(filepath.ToSlash(filePath), "/")
 	for i, part := range pathParts {
-		if part == "orgchart" || part == "people" || part == "documents" {
+		if part == "orgchart" || part == "people" || part == "documents" || part == "secretaries"{
 			if i+1 < len(pathParts) {
 				return pathParts[i+1], nil
 			}
 			return "", fmt.Errorf("president name not found after '%s' in path: %s", part, filePath)
 		}
 	}
-	return "", fmt.Errorf("neither 'orgchart' nor 'people' nor 'documents' found in path: %s", filePath)
+	return "", fmt.Errorf("neither 'orgchart' nor 'people' nor 'documents' nor 'secretaries' found in path: %s", filePath)
 }
 
 // loadTransactions reads and processes transactions from a CSV file

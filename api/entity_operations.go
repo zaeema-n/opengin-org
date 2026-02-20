@@ -6,6 +6,8 @@ import (
 	"time"
 
 	"orgchart_nexoan/models"
+
+	"github.com/google/uuid"
 )
 
 // CreateGovernmentNode creates the initial government node
@@ -2192,4 +2194,148 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 	}
 
 	return entityCounter, nil
+}
+
+// AddSecretaryEntity creates or finds a citizen, finds the correct minister that is
+// active at the appointment date (via the president's AS_MINISTER relationships),
+// creates an AS_APPOINTED relationship from the minister to the citizen, and then
+// creates an AS_ROLE relationship from the citizen to the minister's Secretary node.
+func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCounters map[string]int) (int, error) {
+	child := transaction["child"].(string)
+	childType := transaction["child_type"].(string)
+	parent := transaction["parent"].(string)
+	parentType := transaction["parent_type"].(string)
+	dateStr := transaction["date"].(string)
+	transactionID := transaction["transaction_id"].(string)
+	presidentName := transaction["president"].(string)
+
+	date, err := time.Parse("2006-01-02", strings.TrimSpace(dateStr))
+	if err != nil {
+		return 0, fmt.Errorf("failed to parse date: %w", err)
+	}
+	dateISO := date.Format(time.RFC3339)
+
+	// Step 1: Check if citizen exists; create if not.
+	personResults, err := c.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{Major: "Person"}, Name: child,
+	})
+	if err != nil {
+		return 0, fmt.Errorf("failed to search for citizen '%s': %w", child, err)
+	}
+	if len(personResults) > 1 {
+		return 0, fmt.Errorf("multiple citizens found with name '%s'", child)
+	}
+
+	var citizenID string
+	if len(personResults) == 1 {
+		citizenID = personResults[0].ID
+	} else {
+		if _, exists := entityCounters[childType]; !exists {
+			return 0, fmt.Errorf("unknown child type: %s", childType)
+		}
+		prefixPart := strings.Split(transactionID, "_")[0]
+		prefix := fmt.Sprintf("%s_%s", prefixPart, strings.ToLower(childType[:3]))
+		entityCounters[childType]++
+		newID := fmt.Sprintf("%s_%d", prefix, entityCounters[childType])
+
+		created, err := c.CreateEntity(&models.Entity{
+			ID:            newID,
+			Kind:          models.Kind{Major: "Person", Minor: childType},
+			Created:       dateISO,
+			Terminated:    "",
+			Name:          models.TimeBasedValue{StartTime: dateISO, Value: child},
+			Metadata:      []models.MetadataEntry{},
+			Attributes:    []models.AttributeEntry{},
+			Relationships: []models.RelationshipEntry{},
+		})
+		if err != nil {
+			return 0, fmt.Errorf("failed to create citizen '%s': %w", child, err)
+		}
+		citizenID = created.ID
+	}
+
+	// Step 2: Look up the president.
+	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
+	if err != nil {
+		return 0, fmt.Errorf("failed to get president '%s': %w", presidentName, err)
+	}
+
+	// Step 3: Get AS_MINISTER relationships active at dateISO.
+	ministerRels, err := c.GetRelatedEntities(presidentEntity.ID, &models.Relationship{
+		Name:     "AS_MINISTER",
+		ActiveAt: dateISO,
+	})
+	if err != nil {
+		return 0, fmt.Errorf("failed to get AS_MINISTER relationships for president '%s': %w", presidentName, err)
+	}
+
+	// Step 4: Search for all ministers with the given name and kind, then
+	// intersect with the IDs returned by the active AS_MINISTER relationships.
+	// This avoids one SearchEntities call per relationship.
+	candidateResults, err := c.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{Major: "Organisation", Minor: parentType},
+		Name: parent,
+	})
+	if err != nil {
+		return 0, fmt.Errorf("failed to search for minister '%s' (%s): %w", parent, parentType, err)
+	}
+
+	// Build a set of IDs that are active at dateISO (from the president's AS_MINISTER rels).
+	activeMinisterIDs := make(map[string]struct{}, len(ministerRels))
+	for _, rel := range ministerRels {
+		activeMinisterIDs[rel.RelatedEntityID] = struct{}{}
+	}
+
+	// Match: candidate must also be in the active set.
+	var matchedMinisterID string
+	for _, candidate := range candidateResults {
+		if _, active := activeMinisterIDs[candidate.ID]; active {
+			if matchedMinisterID != "" {
+				return 0, fmt.Errorf("multiple ministers match '%s' (%s) at %s", parent, parentType, dateISO)
+			}
+			matchedMinisterID = candidate.ID
+		}
+	}
+	if matchedMinisterID == "" {
+		return 0, fmt.Errorf("no active minister '%s' (%s) found at %s", parent, parentType, dateISO)
+	}
+
+	// Step 5: AS_APPOINTED from minister → citizen.
+	apptRelID := fmt.Sprintf("%s_%s_%s", matchedMinisterID, citizenID, uuid.New().String())
+	_, err = c.UpdateEntity(matchedMinisterID, &models.Entity{
+		ID:         matchedMinisterID,
+		Metadata:   []models.MetadataEntry{},
+		Attributes: []models.AttributeEntry{},
+		Relationships: []models.RelationshipEntry{{
+			Key: apptRelID,
+			Value: models.Relationship{
+				RelatedEntityID: citizenID, Name: "AS_APPOINTED",
+				StartTime: dateISO, EndTime: "", ID: apptRelID,
+			},
+		}},
+	})
+	if err != nil {
+		return 0, fmt.Errorf("failed to add AS_APPOINTED relationship: %w", err)
+	}
+
+	// Step 6: AS_ROLE from citizen → Secretary node (<matchedMinisterID>_secretary).
+	secretaryNodeID := fmt.Sprintf("%s_secretary", matchedMinisterID)
+	roleRelID := fmt.Sprintf("%s_%s_%s", citizenID, secretaryNodeID, uuid.New().String())
+	_, err = c.UpdateEntity(citizenID, &models.Entity{
+		ID:         citizenID,
+		Metadata:   []models.MetadataEntry{},
+		Attributes: []models.AttributeEntry{},
+		Relationships: []models.RelationshipEntry{{
+			Key: roleRelID,
+			Value: models.Relationship{
+				RelatedEntityID: secretaryNodeID, Name: "AS_ROLE",
+				StartTime: dateISO, EndTime: "", ID: roleRelID,
+			},
+		}},
+	})
+	if err != nil {
+		return 0, fmt.Errorf("failed to add AS_ROLE relationship: %w", err)
+	}
+
+	return entityCounters[childType], nil
 }
