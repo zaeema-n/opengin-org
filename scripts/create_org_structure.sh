@@ -3,7 +3,7 @@
 # Step 1: Creates an organisation structure for each minister with the following structure:
 # Minister A -> Organisation -> Minister -> Secretary
 
-# Step 2 links the existing people in the db to the Minister node in the organisation structure
+# Step 2: links the existing people in the db to the Minister node in the organisation structure
 # using AS_ROLE relationship.
 
 set -e
