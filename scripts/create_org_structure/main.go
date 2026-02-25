@@ -27,6 +27,8 @@ import (
 
 	"orgchart_nexoan/api"
 	"orgchart_nexoan/models"
+
+	"github.com/google/uuid"
 )
 
 // ministerMinorKinds lists the minorKind values that identify a minister.
@@ -146,7 +148,7 @@ func processMinister(client *api.Client, minister models.SearchResult) (created 
 	uniqueRelID := fmt.Sprintf("%s_%s_%s",
 		minister.ID,
 		createdOrg.ID,
-		strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"),
+		uuid.New().String(),
 	)
 
 	ministerUpdate := &models.Entity{

@@ -123,14 +123,12 @@ func main() {
 
 	if *processType == "document" {
 		err = client.ProcessDocumentTransactions(absDataDir, *processType)
-		if err != nil {
-			log.Fatalf("Failed to process transactions: %v", err)
-		}
 	} else {
 		err = client.ProcessTransactions(absDataDir, *processType)
-		if err != nil {
-			log.Fatalf("Failed to process transactions: %v", err)
-		}
+	}
+
+	if err != nil {
+		log.Fatalf("Failed to process transactions: %v", err)
 	}
 
 	fmt.Println("Successfully processed all transactions")

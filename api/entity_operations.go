@@ -2201,13 +2201,41 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 // creates an AS_APPOINTED relationship from the minister to the citizen, and then
 // creates an AS_ROLE relationship from the citizen to the minister's Secretary node.
 func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCounters map[string]int) (int, error) {
-	child := transaction["child"].(string)
-	childType := transaction["child_type"].(string)
-	parent := transaction["parent"].(string)
-	parentType := transaction["parent_type"].(string)
-	dateStr := transaction["date"].(string)
-	transactionID := transaction["transaction_id"].(string)
-	presidentName := transaction["president"].(string)
+	// Extract fields from transaction
+	child, ok := transaction["child"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'child'")
+	}
+	
+	childType, ok := transaction["child_type"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'child_type'")
+	}
+
+	parent, ok := transaction["parent"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'parent'")
+	}
+
+	parentType, ok := transaction["parent_type"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'parent_type'")
+	}
+
+	dateStr, ok := transaction["date"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'date'")
+	}
+
+	transactionID, ok := transaction["transaction_id"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'transaction_id'")
+	}
+
+	presidentName, ok := transaction["president"].(string)
+	if !ok {
+		return 0, fmt.Errorf("transaction missing or invalid 'president'")
+	}
 
 	date, err := time.Parse("2006-01-02", strings.TrimSpace(dateStr))
 	if err != nil {

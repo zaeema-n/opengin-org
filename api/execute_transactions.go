@@ -235,7 +235,7 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 func extractPresidentNameFromPath(filePath string) (string, error) {
 	pathParts := strings.Split(filepath.ToSlash(filePath), "/")
 	for i, part := range pathParts {
-		if part == "orgchart" || part == "people" || part == "documents" || part == "secretaries"{
+		if part == "orgchart" || part == "people" || part == "documents" || part == "secretaries" {
 			if i+1 < len(pathParts) {
 				return pathParts[i+1], nil
 			}
