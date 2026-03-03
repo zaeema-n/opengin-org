@@ -2260,25 +2260,40 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 	}
 
 	// Step 5: AS_APPOINTED from minister → citizen.
-	apptRelID := fmt.Sprintf("%s_%s_%s", matchedMinisterID, citizenID, uuid.New().String())
-	_, err = c.UpdateEntity(matchedMinisterID, &models.Entity{
-		ID:         matchedMinisterID,
-		Metadata:   []models.MetadataEntry{},
-		Attributes: []models.AttributeEntry{},
-		Relationships: []models.RelationshipEntry{{
-			Key: apptRelID,
-			Value: models.Relationship{
-				RelatedEntityID: citizenID, Name: "AS_APPOINTED",
-				StartTime: dateISO, EndTime: "", ID: apptRelID,
-			},
-		}},
+	// apptRelID := fmt.Sprintf("%s_%s_%s", matchedMinisterID, citizenID, uuid.New().String())
+	// _, err = c.UpdateEntity(matchedMinisterID, &models.Entity{
+	// 	ID:         matchedMinisterID,
+	// 	Metadata:   []models.MetadataEntry{},
+	// 	Attributes: []models.AttributeEntry{},
+	// 	Relationships: []models.RelationshipEntry{{
+	// 		Key: apptRelID,
+	// 		Value: models.Relationship{
+	// 			RelatedEntityID: citizenID, Name: "AS_APPOINTED",
+	// 			StartTime: dateISO, EndTime: "", ID: apptRelID,
+	// 		},
+	// 	}},
+	// })
+	// if err != nil {
+	// 	return 0, fmt.Errorf("failed to add AS_APPOINTED relationship: %w", err)
+	// }
+
+	// Guard: check if the secretary node already has an active AS_ROLE relationship at dateISO.
+	// If it does, a secretary is already active for this minister.
+	secretaryNodeID := fmt.Sprintf("%s_secretary", matchedMinisterID)
+	existingRoleRels, err := c.GetRelatedEntities(secretaryNodeID, &models.Relationship{
+		Name:      "AS_ROLE",
+		ActiveAt:  dateISO,
+		Direction: "INCOMING",
 	})
 	if err != nil {
-		return 0, fmt.Errorf("failed to add AS_APPOINTED relationship: %w", err)
+		return 0, fmt.Errorf("failed to check existing active secretaries for minister '%s': %w", matchedMinisterID, err)
+	}
+	if len(existingRoleRels) > 0 {
+		return 0, fmt.Errorf("minister '%s' already has an active secretary at %s", matchedMinisterID, dateISO)
 	}
 
 	// Step 6: AS_ROLE from citizen → Secretary node (<matchedMinisterID>_secretary).
-	secretaryNodeID := fmt.Sprintf("%s_secretary", matchedMinisterID)
+
 	roleRelID := fmt.Sprintf("%s_%s_%s", citizenID, secretaryNodeID, uuid.New().String())
 	_, err = c.UpdateEntity(citizenID, &models.Entity{
 		ID:         citizenID,
