@@ -1,0 +1,2 @@
+Gazette 2460/27 state that Kapila C.K.Perera was assigned as secretary to "Minister of Transport, Highways and Urban Development" on 2025-10-10.
+However, this ministry was only created on 2025-10-11, hence this entry is added to the ADD.csv file in 2025-10-11.
