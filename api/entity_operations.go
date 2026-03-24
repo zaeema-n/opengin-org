@@ -1545,11 +1545,14 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 		}
-
+		// Filter for exact name match
+		searchResults = filterByExactName(searchResults, parent)
 		if len(searchResults) == 0 {
 			return 0, fmt.Errorf("parent entity not found: %s", parent)
 		}
-
+		if len(searchResults) > 1 {
+			return 0, fmt.Errorf("multiple parent entities found with name '%s'", parent)
+		}
 		parentID = searchResults[0].ID
 	}
 
@@ -1565,7 +1568,8 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for person entity: %w", err)
 	}
-
+	// Filter for exact name match
+	personResults = filterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for person: %s", child)
 	}
@@ -1687,8 +1691,13 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 	if err != nil {
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
+	// Filter for exact name match
+	childResults = filterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
+	}
+	if len(childResults) > 1 {
+		return fmt.Errorf("multiple child entities found with name '%s'", child)
 	}
 	childID := childResults[0].ID
 
@@ -1762,8 +1771,13 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 		if err != nil {
 			return fmt.Errorf("failed to search for parent entity: %w", err)
 		}
+		// Filter for exact name match
+		parentResults = filterByExactName(parentResults, parent)
 		if len(parentResults) == 0 {
 			return fmt.Errorf("parent entity not found: %s", parent)
+		}
+		if len(parentResults) > 1 {
+			return fmt.Errorf("multiple parent entities found with name '%s'", parent)
 		}
 		parentID = parentResults[0].ID
 	}
@@ -1861,8 +1875,13 @@ func (c *Client) MovePerson(transaction map[string]interface{}) error {
 	if err != nil {
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
+	// Filter for exact name match
+	childResults = filterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
+	}
+	if len(childResults) > 1 {
+		return fmt.Errorf("multiple child entities found with name '%s'", child)
 	}
 	childID := childResults[0].ID
 
