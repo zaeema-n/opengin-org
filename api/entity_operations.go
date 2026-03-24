@@ -307,6 +307,8 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for existing department: %w", err)
 		}
+		// Filter for exact name match before duplicate check
+		existingDepartmentResults = filterByExactName(existingDepartmentResults, child)
 		if len(existingDepartmentResults) > 0 {
 			return 0, fmt.Errorf("department with name '%s' already exists", child)
 		}
@@ -694,6 +696,8 @@ func (c *Client) MoveDepartment(transaction map[string]interface{}) error {
 	if err != nil {
 		return fmt.Errorf("failed to search for department: %w", err)
 	}
+	// Filter for exact name match
+	departmentResults = filterByExactName(departmentResults, child)
 	if len(departmentResults) == 0 {
 		return fmt.Errorf("department '%s' not found", child)
 	}
@@ -1052,8 +1056,13 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for old department: %w", err)
 	}
+	// Filter for exact name match
+	oldDepartmentResults = filterByExactName(oldDepartmentResults, oldName)
 	if len(oldDepartmentResults) == 0 {
 		return 0, fmt.Errorf("old department not found: %s", oldName)
+	}
+	if len(oldDepartmentResults) > 1 {
+		return 0, fmt.Errorf("multiple departments found with name '%s'", oldName)
 	}
 	oldDepartmentID := oldDepartmentResults[0].ID
 
@@ -1068,11 +1077,16 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for new department name: %w", err)
 	}
+	// Filter for exact name match
+	existingDepartmentResults = filterByExactName(existingDepartmentResults, newName)
 
 	var newDepartmentID string
 	var newDepartmentCounter int
 
 	if len(existingDepartmentResults) > 0 {
+		if len(existingDepartmentResults) > 1 {
+			return 0, fmt.Errorf("multiple departments found with name '%s'", newName)
+		}
 		// Check if the existing department has any active AS_DEPARTMENT relationships
 		existingDepartment := existingDepartmentResults[0]
 		existingDepartmentID := existingDepartment.ID
@@ -1181,6 +1195,8 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for new department: %w", err)
 		}
+		// Filter for exact name match
+		newDepartmentResults = filterByExactName(newDepartmentResults, newName)
 		if len(newDepartmentResults) == 0 {
 			return 0, fmt.Errorf("new department not found: %s", newName)
 		}
