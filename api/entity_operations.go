@@ -2093,11 +2093,14 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 	}
-
+	// Filter for exact name match
+	searchResults = filterByExactName(searchResults, parent)
 	if len(searchResults) == 0 {
 		return 0, fmt.Errorf("parent entity not found: %s", parent)
 	}
-
+	if len(searchResults) > 1 {
+		return 0, fmt.Errorf("multiple parent entities found with name '%s'", parent)
+	}
 	parentID := searchResults[0].ID
 
 	// Check if document already exists
@@ -2113,7 +2116,8 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for document entity: %w", err)
 	}
-
+	// Filter for exact name match
+	documentResults = filterByExactName(documentResults, child)
 	if len(documentResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for document: %s", child)
 	}
@@ -2240,11 +2244,14 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 
 	// Step 1: Check if citizen exists; create if not.
 	personResults, err := c.SearchEntities(&models.SearchCriteria{
-		Kind: &models.Kind{Major: "Person"}, Name: child,
+		Kind: &models.Kind{Major: "Person"},
+		Name: child,
 	})
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
+	// Filter for exact name match
+	personResults = filterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple citizens found with name '%s'", child)
 	}
@@ -2302,6 +2309,8 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for minister '%s' (%s): %w", parent, parentType, err)
 	}
+	// Filter for exact name match
+	candidateResults = filterByExactName(candidateResults, parent)
 
 	// Build a set of IDs that are active at dateISO (from the president's AS_MINISTER rels).
 	activeMinisterIDs := make(map[string]struct{}, len(ministerRels))
@@ -2406,6 +2415,8 @@ func (c *Client) TerminateSecretaryEntity(transaction map[string]interface{}) er
 	if err != nil {
 		return fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
+	// Filter for exact name match
+	personResults = filterByExactName(personResults, child)
 	if len(personResults) == 0 {
 		return fmt.Errorf("citizen '%s' not found", child)
 	}
