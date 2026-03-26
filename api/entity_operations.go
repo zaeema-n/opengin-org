@@ -5,12 +5,11 @@ import (
 	"strings"
 	"time"
 
-	"orgchart_nexoan/models"
 	"orgchart_nexoan/internal/utils"
+	"orgchart_nexoan/models"
 
 	"github.com/google/uuid"
 )
-
 
 // isMinisterType returns true for any minister subtype value.
 func isMinisterType(t string) bool {
@@ -80,23 +79,25 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 		return nil, fmt.Errorf("multiple entities found with name '%s'", presidentName)
 	}
 
+	// Get government node
+	governmentResults, err := c.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{
+			Major: "Organisation",
+			Minor: "government",
+		},
+	})
+	if err != nil || len(governmentResults) == 0 {
+		return nil, fmt.Errorf("failed to find government entity: %w", err)
+	}
+	governmentID := governmentResults[0].ID
+
 	// Find the president by checking if they have AS_PRESIDENT relationship to government
 	for _, president := range presidentResults {
-		// Get government node
-		governmentResults, err := c.SearchEntities(&models.SearchCriteria{
-			Kind: &models.Kind{
-				Major: "Organisation",
-				Minor: "government",
-			},
-		})
-		if err != nil || len(governmentResults) == 0 {
-			continue
-		}
-
 		// Check if this citizen has AS_PRESIDENT relationship to government
-		presidentRelations, err := c.GetRelatedEntities(governmentResults[0].ID, &models.Relationship{
+		presidentRelations, err := c.GetRelatedEntities(governmentID, &models.Relationship{
 			Name:            "AS_PRESIDENT",
 			RelatedEntityID: president.ID,
+			Direction:       "OUTGOING",
 		})
 		if err != nil {
 			continue
@@ -125,7 +126,7 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 }
 
 // GetMinisterByPresident retrieves a minister entity by president name and minister name
-func (c *Client) GetMinisterByPresident(presidentName, ministerName, dateISO string) (*models.Entity, error) {
+func (c *Client) GetMinisterByPresident(presidentName, ministerName string) (*models.Entity, error) {
 	// Get the president entity using the helper function
 	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
 	if err != nil {
@@ -134,16 +135,16 @@ func (c *Client) GetMinisterByPresident(presidentName, ministerName, dateISO str
 	presidentID := presidentEntity.ID
 
 	// Get all minister relationships for the president
-	presidentRelations, err := c.GetRelatedEntities(presidentID, &models.Relationship{
-		Name: "AS_MINISTER",
-		//ActiveAt: dateISO,
+	ministerRelations, err := c.GetRelatedEntities(presidentID, &models.Relationship{
+		Name:      "AS_MINISTER",
+		Direction: "OUTGOING",
 	})
 	if err != nil {
 		return nil, fmt.Errorf("failed to get president's relationships: %w", err)
 	}
 
 	// Find the minister with the specified name
-	for _, rel := range presidentRelations {
+	for _, rel := range ministerRelations {
 		// Fetch the related entity (minister)
 		ministerResults, err := c.SearchEntities(&models.SearchCriteria{
 			ID: rel.RelatedEntityID,
