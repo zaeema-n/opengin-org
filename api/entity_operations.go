@@ -6,20 +6,11 @@ import (
 	"time"
 
 	"orgchart_nexoan/models"
+	"orgchart_nexoan/internal/utils"
 
 	"github.com/google/uuid"
 )
 
-// filterByExactName returns only the results whose Name exactly matches name.
-func filterByExactName(results []models.SearchResult, name string) []models.SearchResult {
-	var exact []models.SearchResult
-	for _, r := range results {
-		if r.Name == name {
-			exact = append(exact, r)
-		}
-	}
-	return exact
-}
 
 // isMinisterType returns true for any minister subtype value.
 func isMinisterType(t string) bool {
@@ -79,7 +70,7 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 	}
 
 	// Filter for exact name match
-	presidentResults = filterByExactName(presidentResults, presidentName)
+	presidentResults = utils.FilterByExactName(presidentResults, presidentName)
 
 	if len(presidentResults) == 0 {
 		return nil, fmt.Errorf("president entity not found: %s", presidentName)
@@ -331,7 +322,7 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 			return 0, fmt.Errorf("failed to search for existing department: %w", err)
 		}
 		// Filter for exact name match before duplicate check
-		existingDepartmentResults = filterByExactName(existingDepartmentResults, child)
+		existingDepartmentResults = utils.FilterByExactName(existingDepartmentResults, child)
 		if len(existingDepartmentResults) > 0 {
 			return 0, fmt.Errorf("department with name '%s' already exists", child)
 		}
@@ -364,7 +355,7 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 		}
 
 		// Filter for exact name match
-		searchResults = filterByExactName(searchResults, parent)
+		searchResults = utils.FilterByExactName(searchResults, parent)
 
 		if len(searchResults) == 0 {
 			return 0, fmt.Errorf("parent entity not found: %s", parent)
@@ -496,7 +487,7 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 			return fmt.Errorf("failed to search for parent entity: %w", err)
 		}
 		// Filter for exact name match
-		parentResults = filterByExactName(parentResults, parent)
+		parentResults = utils.FilterByExactName(parentResults, parent)
 		if len(parentResults) == 0 {
 			return fmt.Errorf("parent entity not found: %s", parent)
 		}
@@ -720,7 +711,7 @@ func (c *Client) MoveDepartment(transaction map[string]interface{}) error {
 		return fmt.Errorf("failed to search for department: %w", err)
 	}
 	// Filter for exact name match
-	departmentResults = filterByExactName(departmentResults, child)
+	departmentResults = utils.FilterByExactName(departmentResults, child)
 	if len(departmentResults) == 0 {
 		return fmt.Errorf("department '%s' not found", child)
 	}
@@ -1080,7 +1071,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 		return 0, fmt.Errorf("failed to search for old department: %w", err)
 	}
 	// Filter for exact name match
-	oldDepartmentResults = filterByExactName(oldDepartmentResults, oldName)
+	oldDepartmentResults = utils.FilterByExactName(oldDepartmentResults, oldName)
 	if len(oldDepartmentResults) == 0 {
 		return 0, fmt.Errorf("old department not found: %s", oldName)
 	}
@@ -1101,7 +1092,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 		return 0, fmt.Errorf("failed to search for new department name: %w", err)
 	}
 	// Filter for exact name match
-	existingDepartmentResults = filterByExactName(existingDepartmentResults, newName)
+	existingDepartmentResults = utils.FilterByExactName(existingDepartmentResults, newName)
 
 	var newDepartmentID string
 	var newDepartmentCounter int
@@ -1219,7 +1210,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 			return 0, fmt.Errorf("failed to search for new department: %w", err)
 		}
 		// Filter for exact name match
-		newDepartmentResults = filterByExactName(newDepartmentResults, newName)
+		newDepartmentResults = utils.FilterByExactName(newDepartmentResults, newName)
 		if len(newDepartmentResults) == 0 {
 			return 0, fmt.Errorf("new department not found: %s", newName)
 		}
@@ -1569,7 +1560,7 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 			return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 		}
 		// Filter for exact name match
-		searchResults = filterByExactName(searchResults, parent)
+		searchResults = utils.FilterByExactName(searchResults, parent)
 		if len(searchResults) == 0 {
 			return 0, fmt.Errorf("parent entity not found: %s", parent)
 		}
@@ -1592,7 +1583,7 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 		return 0, fmt.Errorf("failed to search for person entity: %w", err)
 	}
 	// Filter for exact name match
-	personResults = filterByExactName(personResults, child)
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for person: %s", child)
 	}
@@ -1715,7 +1706,7 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
 	// Filter for exact name match
-	childResults = filterByExactName(childResults, child)
+	childResults = utils.FilterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
 	}
@@ -1795,7 +1786,7 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 			return fmt.Errorf("failed to search for parent entity: %w", err)
 		}
 		// Filter for exact name match
-		parentResults = filterByExactName(parentResults, parent)
+		parentResults = utils.FilterByExactName(parentResults, parent)
 		if len(parentResults) == 0 {
 			return fmt.Errorf("parent entity not found: %s", parent)
 		}
@@ -1899,7 +1890,7 @@ func (c *Client) MovePerson(transaction map[string]interface{}) error {
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
 	// Filter for exact name match
-	childResults = filterByExactName(childResults, child)
+	childResults = utils.FilterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
 	}
@@ -2117,7 +2108,7 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 		return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 	}
 	// Filter for exact name match
-	searchResults = filterByExactName(searchResults, parent)
+	searchResults = utils.FilterByExactName(searchResults, parent)
 	if len(searchResults) == 0 {
 		return 0, fmt.Errorf("parent entity not found: %s", parent)
 	}
@@ -2140,7 +2131,7 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 		return 0, fmt.Errorf("failed to search for document entity: %w", err)
 	}
 	// Filter for exact name match
-	documentResults = filterByExactName(documentResults, child)
+	documentResults = utils.FilterByExactName(documentResults, child)
 	if len(documentResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for document: %s", child)
 	}
@@ -2274,7 +2265,7 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 		return 0, fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
 	// Filter for exact name match
-	personResults = filterByExactName(personResults, child)
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple citizens found with name '%s'", child)
 	}
@@ -2333,7 +2324,7 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 		return 0, fmt.Errorf("failed to search for minister '%s' (%s): %w", parent, parentType, err)
 	}
 	// Filter for exact name match
-	candidateResults = filterByExactName(candidateResults, parent)
+	candidateResults = utils.FilterByExactName(candidateResults, parent)
 
 	// Build a set of IDs that are active at dateISO (from the president's AS_MINISTER rels).
 	activeMinisterIDs := make(map[string]struct{}, len(ministerRels))
@@ -2439,7 +2430,7 @@ func (c *Client) TerminateSecretaryEntity(transaction map[string]interface{}) er
 		return fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
 	// Filter for exact name match
-	personResults = filterByExactName(personResults, child)
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) == 0 {
 		return fmt.Errorf("citizen '%s' not found", child)
 	}

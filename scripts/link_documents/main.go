@@ -11,19 +11,9 @@ import (
 	"time"
 
 	"orgchart_nexoan/api"
+	"orgchart_nexoan/internal/utils"
 	"orgchart_nexoan/models"
 )
-
-// filterByExactName returns only results whose Name exactly matches name.
-func filterByExactName(results []models.SearchResult, name string) []models.SearchResult {
-	var exact []models.SearchResult
-	for _, r := range results {
-		if r.Name == name {
-			exact = append(exact, r)
-		}
-	}
-	return exact
-}
 
 // DocumentLink represents a document relationship from CSV
 type DocumentLink struct {
@@ -158,7 +148,7 @@ func findDocumentByName(client *api.Client, documentName string) (*models.Entity
 		return nil, fmt.Errorf("search failed: %w", err)
 	}
 	// Filter for exact name match
-	results = filterByExactName(results, documentName)
+	results = utils.FilterByExactName(results, documentName)
 	if len(results) == 0 {
 		return nil, fmt.Errorf("document not found: %s", documentName)
 	}
