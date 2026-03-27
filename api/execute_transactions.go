@@ -127,7 +127,12 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 		case "ADD":
 			// Check if the transaction type matches the process type
 			childType := transaction["child_type"].(string)
-			if (processType == "organisation" && (childType == "minister" || childType == "department")) ||
+			// Treat all minister subtypes as organisation-level entities
+			effectiveChildType := childType
+			if isMinisterType(childType) {
+				effectiveChildType = "minister"
+			}
+			if (processType == "organisation" && (isMinisterType(childType) || childType == "department")) ||
 				(processType == "person" && childType == "citizen") ||
 				(processType == "secretary" && childType == "citizen") {
 				var err error
@@ -137,13 +142,12 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 				} else if processType == "secretary" && childType == "citizen" {
 					entityCounters[childType], err = c.AddSecretaryEntity(transaction, entityCounters)
 				} else {
-					entityCounters[childType], err = c.AddOrgEntity(transaction, entityCounters)
+					entityCounters[effectiveChildType], err = c.AddOrgEntity(transaction, entityCounters)
 				}
 
 				if err != nil {
 					return fmt.Errorf("failed to process add transaction %s: %w", transaction["transaction_id"], err)
 				}
-				//entityCounters[childType] = newCounter
 				fmt.Printf("Processed Add transaction: %s\n", transaction["transaction_id"])
 			} else {
 				fmt.Printf("Skipping transaction %s: type %s does not match process type %s\n",
@@ -174,21 +178,21 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 		case "MOVE":
 			if processType == "organisation" {
 				// Check if we're moving a department or a minister
-				childType := transaction["type"].(string)
-				if childType == "department" {
+				child := transaction["type"].(string)
+				if child == "department" {
 					err := c.MoveDepartment(transaction)
 					if err != nil {
 						return fmt.Errorf("failed to process move department transaction %s: %w", transaction["transaction_id"], err)
 					}
 					fmt.Printf("Processed Move Department transaction: %s\n", transaction["transaction_id"])
-				} else if childType == "minister" {
+				} else if isMinisterType(child) {
 					err := c.MoveMinister(transaction)
 					if err != nil {
 						return fmt.Errorf("failed to process move minister transaction %s: %w", transaction["transaction_id"], err)
 					}
 					fmt.Printf("Processed Move Minister transaction: %s\n", transaction["transaction_id"])
 				} else {
-					return fmt.Errorf("unknown child type for MOVE transaction: %s", childType)
+					return fmt.Errorf("unknown child type for MOVE transaction: %s", child)
 				}
 			} else if processType == "person" {
 				err := c.MovePerson(transaction)
@@ -212,17 +216,18 @@ func (c *Client) ProcessTransactions(dataDir string, processType string) error {
 			if processType == "organisation" {
 				var newCounter int
 				var err error
-				if transaction["type"] == "minister" {
+				txType := transaction["type"].(string)
+				if isMinisterType(txType) {
 					newCounter, err = c.RenameMinister(transaction, entityCounters)
-				} else if transaction["type"] == "department" {
+				} else if txType == "department" {
 					newCounter, err = c.RenameDepartment(transaction, entityCounters)
 				}
 				if err != nil {
 					return fmt.Errorf("failed to process rename transaction %s: %w", transaction["transaction_id"], err)
 				}
-				if transaction["type"] == "minister" {
+				if isMinisterType(txType) {
 					entityCounters["minister"] = newCounter
-				} else if transaction["type"] == "department" {
+				} else if txType == "department" {
 					entityCounters["department"] = newCounter
 				}
 				fmt.Printf("Processed Rename transaction: %s\n", transaction["transaction_id"])

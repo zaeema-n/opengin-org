@@ -5,10 +5,29 @@ import (
 	"strings"
 	"time"
 
+	"orgchart_nexoan/internal/utils"
 	"orgchart_nexoan/models"
 
 	"github.com/google/uuid"
 )
+
+// isMinisterType returns true for any minister subtype value.
+func isMinisterType(t string) bool {
+	switch t {
+	case "cabinetMinister", "stateMinister":
+		return true
+	}
+	return false
+}
+
+// ministerTypeFromName derives the correct minister subtype from the minister's name.
+func ministerTypeFromName(name string) string {
+	lowerName := strings.ToLower(name)
+	if strings.HasPrefix(lowerName, "state minister") || strings.HasPrefix(lowerName, "non cabinet minister") {
+		return "stateMinister"
+	}
+	return "cabinetMinister"
+}
 
 // CreateGovernmentNode creates the initial government node
 func (c *Client) CreateGovernmentNode() (*models.Entity, error) {
@@ -49,27 +68,37 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 	if err != nil {
 		return nil, fmt.Errorf("failed to search for president entity: %w", err)
 	}
+
+	// Filter for exact name match
+	presidentResults = utils.FilterByExactName(presidentResults, presidentName)
+
 	if len(presidentResults) == 0 {
 		return nil, fmt.Errorf("president entity not found: %s", presidentName)
 	}
 
+	if len(presidentResults) > 1 {
+		return nil, fmt.Errorf("multiple entities found with name '%s'", presidentName)
+	}
+
+	// Get government node
+	governmentResults, err := c.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{
+			Major: "Organisation",
+			Minor: "government",
+		},
+	})
+	if err != nil || len(governmentResults) == 0 {
+		return nil, fmt.Errorf("failed to find government entity: %w", err)
+	}
+	governmentID := governmentResults[0].ID
+
 	// Find the president by checking if they have AS_PRESIDENT relationship to government
 	for _, president := range presidentResults {
-		// Get government node
-		governmentResults, err := c.SearchEntities(&models.SearchCriteria{
-			Kind: &models.Kind{
-				Major: "Organisation",
-				Minor: "government",
-			},
-		})
-		if err != nil || len(governmentResults) == 0 {
-			continue
-		}
-
 		// Check if this citizen has AS_PRESIDENT relationship to government
-		presidentRelations, err := c.GetRelatedEntities(governmentResults[0].ID, &models.Relationship{
+		presidentRelations, err := c.GetRelatedEntities(governmentID, &models.Relationship{
 			Name:            "AS_PRESIDENT",
 			RelatedEntityID: president.ID,
+			Direction:       "OUTGOING",
 		})
 		if err != nil {
 			continue
@@ -98,7 +127,7 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 }
 
 // GetMinisterByPresident retrieves a minister entity by president name and minister name
-func (c *Client) GetMinisterByPresident(presidentName, ministerName, dateISO string) (*models.Entity, error) {
+func (c *Client) GetMinisterByPresident(presidentName, ministerName string) (*models.Entity, error) {
 	// Get the president entity using the helper function
 	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
 	if err != nil {
@@ -107,16 +136,16 @@ func (c *Client) GetMinisterByPresident(presidentName, ministerName, dateISO str
 	presidentID := presidentEntity.ID
 
 	// Get all minister relationships for the president
-	presidentRelations, err := c.GetRelatedEntities(presidentID, &models.Relationship{
-		Name: "AS_MINISTER",
-		//ActiveAt: dateISO,
+	ministerRelations, err := c.GetRelatedEntities(presidentID, &models.Relationship{
+		Name:      "AS_MINISTER",
+		Direction: "OUTGOING",
 	})
 	if err != nil {
 		return nil, fmt.Errorf("failed to get president's relationships: %w", err)
 	}
 
 	// Find the minister with the specified name
-	for _, rel := range presidentRelations {
+	for _, rel := range ministerRelations {
 		// Fetch the related entity (minister)
 		ministerResults, err := c.SearchEntities(&models.SearchCriteria{
 			ID: rel.RelatedEntityID,
@@ -125,7 +154,7 @@ func (c *Client) GetMinisterByPresident(presidentName, ministerName, dateISO str
 			continue
 		}
 		minister := ministerResults[0]
-		if minister.Kind.Minor == "minister" && minister.Name == ministerName {
+		if isMinisterType(minister.Kind.Minor) && minister.Name == ministerName {
 			// Convert SearchResult to Entity
 			entity := &models.Entity{
 				ID:         minister.ID,
@@ -180,7 +209,7 @@ func (c *Client) GetActiveMinisterByPresident(presidentName, ministerName, dateI
 			continue
 		}
 		minister := ministerResults[0]
-		if minister.Kind.Minor == "minister" && minister.Name == ministerName {
+		if isMinisterType(minister.Kind.Minor) && minister.Name == ministerName {
 			// Convert SearchResult to Entity
 			entity := &models.Entity{
 				ID:         minister.ID,
@@ -230,21 +259,27 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 	}
 	dateISO := date.Format(time.RFC3339)
 
+	// Use effective child type for counter lookups
+	effectiveChildType := childType
+	if isMinisterType(childType) {
+		effectiveChildType = "minister"
+	}
+
 	// Generate new entity ID
-	if _, exists := entityCounters[childType]; !exists {
+	if _, exists := entityCounters[effectiveChildType]; !exists {
 		return 0, fmt.Errorf("unknown child type: %s", childType)
 	}
 
 	// Get the part before the first underscore for the prefix
 	prefixPart := strings.Split(transactionID, "_")[0]
 	prefix := fmt.Sprintf("%s_%s", prefixPart, strings.ToLower(childType[:3]))
-	entityCounter := entityCounters[childType] + 1
+	entityCounter := entityCounters[effectiveChildType] + 1
 	newEntityID := fmt.Sprintf("%s_%d", prefix, entityCounter)
 
 	// Get the parent entity ID based on the child type
 	var parentID string
 
-	if childType == "minister" {
+	if isMinisterType(childType) {
 		// For ministers, parent should be a president (Person type) - presidents are citizens with AS_PRESIDENT relationship
 		if parentType != "president" && parentType != "citizen" {
 			return 0, fmt.Errorf("minister must be attached to a president, got parent_type: %s", parentType)
@@ -267,7 +302,7 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 
 	} else if childType == "department" {
 		// For departments, parent should be a minister, but we need to verify it's the correct minister
-		if parentType != "minister" {
+		if !isMinisterType(parentType) {
 			return 0, fmt.Errorf("department must be attached to a minister, got parent_type: %s", parentType)
 		}
 
@@ -288,6 +323,8 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for existing department: %w", err)
 		}
+		// Filter for exact name match before duplicate check
+		existingDepartmentResults = utils.FilterByExactName(existingDepartmentResults, child)
 		if len(existingDepartmentResults) > 0 {
 			return 0, fmt.Errorf("department with name '%s' already exists", child)
 		}
@@ -319,8 +356,14 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 			return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 		}
 
+		// Filter for exact name match
+		searchResults = utils.FilterByExactName(searchResults, parent)
+
 		if len(searchResults) == 0 {
 			return 0, fmt.Errorf("parent entity not found: %s", parent)
+		}
+		if len(searchResults) > 1 {
+			return 0, fmt.Errorf("multiple parent entities found with name '%s'", parent)
 		}
 
 		parentID = searchResults[0].ID
@@ -352,7 +395,7 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 
 	// Update the parent entity to add the relationship to the child
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", parentID, createdChild.ID, currentTimestamp)
 
 	parentEntity := &models.Entity{
@@ -414,7 +457,7 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 		}
 		parentID = presidentEntity.ID
 
-	} else if parentType == "minister" {
+	} else if isMinisterType(parentType) {
 		// Parent is a minister, need president context to get the correct minister
 		presidentName, ok := transaction["president"].(string)
 		if !ok || presidentName == "" {
@@ -445,14 +488,19 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 		if err != nil {
 			return fmt.Errorf("failed to search for parent entity: %w", err)
 		}
+		// Filter for exact name match
+		parentResults = utils.FilterByExactName(parentResults, parent)
 		if len(parentResults) == 0 {
 			return fmt.Errorf("parent entity not found: %s", parent)
+		}
+		if len(parentResults) > 1 {
+			return fmt.Errorf("multiple parent entities found with name '%s'", parent)
 		}
 		parentID = parentResults[0].ID
 	}
 
 	// Handle child entity retrieval
-	if childType == "minister" {
+	if isMinisterType(childType) {
 		// Child is a minister, parent is the president's name
 		presidentName := parent // parent contains the president's name
 
@@ -596,7 +644,7 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 	}
 
 	// If we're terminating a minister, also terminate any active people assigned to it
-	if childType == "minister" {
+	if isMinisterType(childType) {
 		// Get all active people relationships from the minister
 		ministerPeopleRelations, err := c.GetRelatedEntities(childID, &models.Relationship{
 			Name: "AS_APPOINTED",
@@ -664,6 +712,8 @@ func (c *Client) MoveDepartment(transaction map[string]interface{}) error {
 	if err != nil {
 		return fmt.Errorf("failed to search for department: %w", err)
 	}
+	// Filter for exact name match
+	departmentResults = utils.FilterByExactName(departmentResults, child)
 	if len(departmentResults) == 0 {
 		return fmt.Errorf("department '%s' not found", child)
 	}
@@ -722,7 +772,7 @@ func (c *Client) MoveDepartment(transaction map[string]interface{}) error {
 
 	// Create new AS_DEPARTMENT relationship from new minister to department
 	// Use transaction ID and timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", newMinisterID, departmentID, currentTimestamp)
 
 	newRelationship := &models.Entity{
@@ -784,7 +834,7 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 		"child":          newName,
 		"date":           dateStr,
 		"parent_type":    "president",
-		"child_type":     "minister",
+		"child_type":     ministerTypeFromName(newName),
 		"rel_type":       relType,
 		"transaction_id": transactionID,
 		"president":      presidentName,
@@ -869,7 +919,7 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 	// Move each active person to the new minister
 	for _, rel := range activePeopleRelations {
 		// Create new relationship between new minister and person
-		currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+		currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 		uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", newMinisterID, rel.RelatedEntityID, currentTimestamp)
 
 		newPersonRelationship := &models.Entity{
@@ -964,7 +1014,7 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 
 	// Create RENAMED_TO relationship
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", oldMinisterID, newMinisterID, currentTimestamp)
 
 	renameRelationship := &models.Entity{
@@ -1022,8 +1072,13 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for old department: %w", err)
 	}
+	// Filter for exact name match
+	oldDepartmentResults = utils.FilterByExactName(oldDepartmentResults, oldName)
 	if len(oldDepartmentResults) == 0 {
 		return 0, fmt.Errorf("old department not found: %s", oldName)
+	}
+	if len(oldDepartmentResults) > 1 {
+		return 0, fmt.Errorf("multiple departments found with name '%s'", oldName)
 	}
 	oldDepartmentID := oldDepartmentResults[0].ID
 
@@ -1038,11 +1093,16 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for new department name: %w", err)
 	}
+	// Filter for exact name match
+	existingDepartmentResults = utils.FilterByExactName(existingDepartmentResults, newName)
 
 	var newDepartmentID string
 	var newDepartmentCounter int
 
 	if len(existingDepartmentResults) > 0 {
+		if len(existingDepartmentResults) > 1 {
+			return 0, fmt.Errorf("multiple departments found with name '%s'", newName)
+		}
 		// Check if the existing department has any active AS_DEPARTMENT relationships
 		existingDepartment := existingDepartmentResults[0]
 		existingDepartmentID := existingDepartment.ID
@@ -1127,7 +1187,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 			"parent":         ministerName,
 			"child":          newName,
 			"date":           dateStr,
-			"parent_type":    "minister",
+			"parent_type":    ministerTypeFromName(ministerName),
 			"child_type":     "department",
 			"rel_type":       relType,
 			"transaction_id": transactionID,
@@ -1151,6 +1211,8 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for new department: %w", err)
 		}
+		// Filter for exact name match
+		newDepartmentResults = utils.FilterByExactName(newDepartmentResults, newName)
 		if len(newDepartmentResults) == 0 {
 			return 0, fmt.Errorf("new department not found: %s", newName)
 		}
@@ -1162,7 +1224,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 		// Reusing existing inactive department - create the relationship with the minister
 		// Generate a unique relationship ID
 		newDepartmentCounter = entityCounters["department"]
-		currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+		currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 		uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", ministerID, newDepartmentID, currentTimestamp)
 
 		// Create the relationship between minister and the reactivated department
@@ -1232,7 +1294,7 @@ func (c *Client) RenameDepartment(transaction map[string]interface{}, entityCoun
 
 	// Create RENAMED_TO relationship
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", oldDepartmentID, newDepartmentID, currentTimestamp)
 
 	renameRelationship := &models.Entity{
@@ -1293,7 +1355,7 @@ func (c *Client) MergeMinisters(transaction map[string]interface{}, entityCounte
 		"child":          newMinister,
 		"date":           dateStr,
 		"parent_type":    "president",
-		"child_type":     "minister",
+		"child_type":     ministerTypeFromName(newMinister),
 		"rel_type":       "AS_MINISTER",
 		"transaction_id": transactionID,
 		"president":      presidentName,
@@ -1407,7 +1469,7 @@ func (c *Client) MergeMinisters(transaction map[string]interface{}, entityCounte
 			"child":       oldMinister,
 			"date":        dateStr,
 			"parent_type": "citizen",
-			"child_type":  "minister",
+			"child_type":  ministerTypeFromName(oldMinister),
 			"rel_type":    "AS_MINISTER",
 		}
 
@@ -1418,7 +1480,7 @@ func (c *Client) MergeMinisters(transaction map[string]interface{}, entityCounte
 
 		// 4. Create old minister -> new minister MERGED_INTO relationship
 		// Use transaction ID and current timestamp to ensure unique relationship ID
-		currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+		currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 		uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", oldMinisterID, newMinisterID, currentTimestamp)
 
 		mergedIntoRelationship := &models.Entity{
@@ -1460,7 +1522,7 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 
 	// Get president name if parent is a minister -> currently only supports adding people to ministers
 	var presidentName string
-	if parentType == "minister" {
+	if isMinisterType(parentType) {
 		var ok bool
 		presidentName, ok = transaction["president"].(string)
 		if !ok || presidentName == "" {
@@ -1478,7 +1540,7 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 	// Get the parent entity ID
 	var parentID string
 
-	if parentType == "minister" {
+	if isMinisterType(parentType) {
 		// Parent is a minister, need president context to get the correct minister
 		ministerEntity, err := c.GetActiveMinisterByPresident(presidentName, parent, dateISO)
 		if err != nil {
@@ -1499,11 +1561,14 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 		if err != nil {
 			return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 		}
-
+		// Filter for exact name match
+		searchResults = utils.FilterByExactName(searchResults, parent)
 		if len(searchResults) == 0 {
 			return 0, fmt.Errorf("parent entity not found: %s", parent)
 		}
-
+		if len(searchResults) > 1 {
+			return 0, fmt.Errorf("multiple parent entities found with name '%s'", parent)
+		}
 		parentID = searchResults[0].ID
 	}
 
@@ -1519,7 +1584,8 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for person entity: %w", err)
 	}
-
+	// Filter for exact name match
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for person: %s", child)
 	}
@@ -1568,7 +1634,7 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 
 	// Update the parent entity to add the relationship to the child
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", parentID, childID, currentTimestamp)
 
 	parentEntity := &models.Entity{
@@ -1613,7 +1679,7 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 
 	// Get president name if parent is a minister -> currently only supports terminating relationships with ministers
 	var presidentName string
-	if parentType == "minister" {
+	if isMinisterType(parentType) {
 		var ok bool
 		presidentName, ok = transaction["president"].(string)
 		if !ok || presidentName == "" {
@@ -1641,8 +1707,13 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 	if err != nil {
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
+	// Filter for exact name match
+	childResults = utils.FilterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
+	}
+	if len(childResults) > 1 {
+		return fmt.Errorf("multiple child entities found with name '%s'", child)
 	}
 	childID := childResults[0].ID
 
@@ -1650,7 +1721,7 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 	var parentID string
 	var activeRel *models.Relationship
 
-	if parentType == "minister" {
+	if isMinisterType(parentType) {
 		// Get all active relationships from the person to find the ministry
 		personRelations, err := c.GetRelatedEntities(childID, &models.Relationship{
 			Name: relType,
@@ -1672,7 +1743,7 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 
 				ministry := ministryResults[0]
 				// Check if this ministry is under the correct president and matches the parent name
-				if ministry.Kind.Minor == "minister" && ministry.Name == parent {
+				if isMinisterType(ministry.Kind.Minor) && ministry.Name == parent {
 					// Verify this minister is under the specified president
 					_, err = c.GetActiveMinisterByPresident(presidentName, parent, dateISO)
 					if err == nil {
@@ -1716,8 +1787,13 @@ func (c *Client) TerminatePersonEntity(transaction map[string]interface{}) error
 		if err != nil {
 			return fmt.Errorf("failed to search for parent entity: %w", err)
 		}
+		// Filter for exact name match
+		parentResults = utils.FilterByExactName(parentResults, parent)
 		if len(parentResults) == 0 {
 			return fmt.Errorf("parent entity not found: %s", parent)
+		}
+		if len(parentResults) > 1 {
+			return fmt.Errorf("multiple parent entities found with name '%s'", parent)
 		}
 		parentID = parentResults[0].ID
 	}
@@ -1815,14 +1891,19 @@ func (c *Client) MovePerson(transaction map[string]interface{}) error {
 	if err != nil {
 		return fmt.Errorf("failed to search for child entity: %w", err)
 	}
+	// Filter for exact name match
+	childResults = utils.FilterByExactName(childResults, child)
 	if len(childResults) == 0 {
 		return fmt.Errorf("child entity not found: %s", child)
+	}
+	if len(childResults) > 1 {
+		return fmt.Errorf("multiple child entities found with name '%s'", child)
 	}
 	childID := childResults[0].ID
 
 	// Create new relationship between new minister and person
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", newParentID, childID, currentTimestamp)
 
 	newRelationship := &models.Entity{
@@ -1851,7 +1932,7 @@ func (c *Client) MovePerson(transaction map[string]interface{}) error {
 		"parent":      oldParent,
 		"child":       child,
 		"date":        dateStr,
-		"parent_type": "minister",
+		"parent_type": ministerTypeFromName(oldParent),
 		"child_type":  "citizen",
 		"rel_type":    relType,
 		"president":   presidentName,
@@ -1903,7 +1984,7 @@ func (c *Client) MoveMinister(transaction map[string]interface{}) error {
 
 	// Create new relationship between new president and minister
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", newParentID, childID, currentTimestamp)
 
 	newRelationship := &models.Entity{
@@ -2028,11 +2109,14 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for parent entity: %w", err)
 	}
-
+	// Filter for exact name match
+	searchResults = utils.FilterByExactName(searchResults, parent)
 	if len(searchResults) == 0 {
 		return 0, fmt.Errorf("parent entity not found: %s", parent)
 	}
-
+	if len(searchResults) > 1 {
+		return 0, fmt.Errorf("multiple parent entities found with name '%s'", parent)
+	}
 	parentID := searchResults[0].ID
 
 	// Check if document already exists
@@ -2048,7 +2132,8 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for document entity: %w", err)
 	}
-
+	// Filter for exact name match
+	documentResults = utils.FilterByExactName(documentResults, child)
 	if len(documentResults) > 1 {
 		return 0, fmt.Errorf("multiple entities found for document: %s", child)
 	}
@@ -2094,7 +2179,7 @@ func (c *Client) AddDocumentEntity(transaction map[string]interface{}, entityCou
 
 	// Update the parent entity to add the relationship to the document
 	// Use transaction ID and current timestamp to ensure unique relationship ID
-	currentTimestamp := strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-")
+	currentTimestamp := fmt.Sprintf("%s_%s", strings.ReplaceAll(time.Now().Format(time.RFC3339), ":", "-"), uuid.New().String()[:8])
 	uniqueRelationshipID := fmt.Sprintf("%s_%s_%s", parentID, childID, currentTimestamp)
 
 	parentEntity := &models.Entity{
@@ -2175,11 +2260,14 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 
 	// Step 1: Check if citizen exists; create if not.
 	personResults, err := c.SearchEntities(&models.SearchCriteria{
-		Kind: &models.Kind{Major: "Person"}, Name: child,
+		Kind: &models.Kind{Major: "Person"},
+		Name: child,
 	})
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
+	// Filter for exact name match
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) > 1 {
 		return 0, fmt.Errorf("multiple citizens found with name '%s'", child)
 	}
@@ -2237,6 +2325,8 @@ func (c *Client) AddSecretaryEntity(transaction map[string]interface{}, entityCo
 	if err != nil {
 		return 0, fmt.Errorf("failed to search for minister '%s' (%s): %w", parent, parentType, err)
 	}
+	// Filter for exact name match
+	candidateResults = utils.FilterByExactName(candidateResults, parent)
 
 	// Build a set of IDs that are active at dateISO (from the president's AS_MINISTER rels).
 	activeMinisterIDs := make(map[string]struct{}, len(ministerRels))
@@ -2341,6 +2431,8 @@ func (c *Client) TerminateSecretaryEntity(transaction map[string]interface{}) er
 	if err != nil {
 		return fmt.Errorf("failed to search for citizen '%s': %w", child, err)
 	}
+	// Filter for exact name match
+	personResults = utils.FilterByExactName(personResults, child)
 	if len(personResults) == 0 {
 		return fmt.Errorf("citizen '%s' not found", child)
 	}

@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"orgchart_nexoan/api"
+	"orgchart_nexoan/internal/utils"
 	"orgchart_nexoan/models"
 )
 
@@ -146,7 +147,8 @@ func findDocumentByName(client *api.Client, documentName string) (*models.Entity
 	if err != nil {
 		return nil, fmt.Errorf("search failed: %w", err)
 	}
-
+	// Filter for exact name match
+	results = utils.FilterByExactName(results, documentName)
 	if len(results) == 0 {
 		return nil, fmt.Errorf("document not found: %s", documentName)
 	}
