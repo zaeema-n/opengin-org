@@ -32,7 +32,7 @@ func TestCreatePeople(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Irrigation and Water Resources and Disaster Management",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -41,7 +41,7 @@ func TestCreatePeople(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Skills Development & Vocational Training",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -66,7 +66,7 @@ func TestCreatePeople(t *testing.T) {
 		assert.NoError(t, err)
 
 		// Update the counter for the next iteration
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created by searching for it
 		searchCriteria := &models.SearchCriteria{
@@ -112,7 +112,7 @@ func TestCreatePeople(t *testing.T) {
 		{
 			transactionID: "2095-17_tr_01",
 			parent:        "Minister of Irrigation and Water Resources and Disaster Management",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Duminda Dissanayake",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -121,7 +121,7 @@ func TestCreatePeople(t *testing.T) {
 		{
 			transactionID: "2095-17_tr_02",
 			parent:        "Minister of Skills Development & Vocational Training",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Dayasiri Jayasekara",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -145,7 +145,7 @@ func TestCreatePeople(t *testing.T) {
 		}
 
 		// Add president field if parent is a minister
-		if tc.parentType == "minister" {
+		if tc.parentType == "cabinetMinister" || tc.parentType == "stateMinister" {
 			transaction["president"] = "Ranil Wickremesinghe"
 		}
 
@@ -210,7 +210,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Defence and Urban Development",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -219,7 +219,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Health and Indigenous Medicine",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -228,7 +228,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Education and Lifelong Learning",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -237,7 +237,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Finance and Economic Development",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -246,7 +246,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Transport and Civil Aviation",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2018-11-01",
 		},
@@ -272,7 +272,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		assert.NoError(t, err)
 
 		// Update the counter for the next iteration
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created by searching for it
 		searchCriteria := &models.SearchCriteria{
@@ -319,7 +319,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		{
 			transactionID: "2095/20_tr_01",
 			parent:        "Minister of Defence and Urban Development",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Saman Kumara",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -329,7 +329,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		{
 			transactionID: "2095/20_tr_02",
 			parent:        "Minister of Health and Indigenous Medicine",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Saman Kumara",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -339,7 +339,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		{
 			transactionID: "2095/20_tr_03",
 			parent:        "Minister of Education and Lifelong Learning",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Saman Kumara",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -349,7 +349,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		{
 			transactionID: "2095/20_tr_04",
 			parent:        "Minister of Finance and Economic Development",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Sandamali Perera",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -359,7 +359,7 @@ func TestCreatePeopleWithManyMinisters(t *testing.T) {
 		{
 			transactionID: "2095/20_tr_04",
 			parent:        "Minister of Transport and Civil Aviation",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Sandamali Perera",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -446,7 +446,7 @@ func TestTerminatePerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Health and Space Exploration",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -474,7 +474,7 @@ func TestTerminatePerson(t *testing.T) {
 		assert.NoError(t, err)
 
 		// Update the counter for the next iteration
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created by searching for it
 		searchCriteria := &models.SearchCriteria{
@@ -521,7 +521,7 @@ func TestTerminatePerson(t *testing.T) {
 		{
 			transactionID: "2065-17_tr_01",
 			parent:        "Minister of Health and Space Exploration",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Sanath Abeywardena",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -590,7 +590,7 @@ func TestTerminatePerson(t *testing.T) {
 		"parent":      parent_minister,
 		"child":       child_person,
 		"date":        "2019-11-01",
-		"parent_type": "minister",
+		"parent_type": "cabinetMinister",
 		"child_type":  "citizen",
 		"rel_type":    "AS_APPOINTED",
 		"president":   "Ranil Wickremesinghe",
@@ -604,7 +604,7 @@ func TestTerminatePerson(t *testing.T) {
 	ministerResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Organisation",
-			Minor: "minister",
+			Minor: "cabinetMinister",
 		},
 		Name: parent_minister,
 	})
@@ -664,7 +664,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Science and Technology",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -674,7 +674,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Sports and Youth Affairs",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -684,7 +684,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Tourism and Culture",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -712,7 +712,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 		assert.NoError(t, err)
 
 		// Update the counter for the next iteration
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created
 		searchCriteria := &models.SearchCriteria{
@@ -744,7 +744,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 		{
 			transactionID: "2065/18_tr_01",
 			parent:        "Minister of Science and Technology",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         personName,
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -754,7 +754,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 		{
 			transactionID: "2065/18_tr_02",
 			parent:        "Minister of Sports and Youth Affairs",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         personName,
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -764,7 +764,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 		{
 			transactionID: "2065/18_tr_03",
 			parent:        "Minister of Tourism and Culture",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         personName,
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -826,7 +826,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 			"parent":      tc.ministerName,
 			"child":       personName,
 			"date":        tc.date,
-			"parent_type": "minister",
+			"parent_type": "cabinetMinister",
 			"child_type":  "citizen",
 			"rel_type":    "AS_APPOINTED",
 			"president":   "Ranil Wickremesinghe",
@@ -840,7 +840,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 		ministerResults, err := client.SearchEntities(&models.SearchCriteria{
 			Kind: &models.Kind{
 				Major: "Organisation",
-				Minor: "minister",
+				Minor: "cabinetMinister",
 			},
 			Name: tc.ministerName,
 		})
@@ -868,7 +868,7 @@ func TestTerminateMultipleMinistersForPerson(t *testing.T) {
 	tourismResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Organisation",
-			Minor: "minister",
+			Minor: "cabinetMinister",
 		},
 		Name: "Minister of Tourism and Culture",
 	})
@@ -915,7 +915,7 @@ func TestMovePerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Agriculture and Food Security",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -925,7 +925,7 @@ func TestMovePerson(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Environment and Climate Change",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2019-11-01",
 			president:     "Ranil Wickremesinghe",
@@ -953,7 +953,7 @@ func TestMovePerson(t *testing.T) {
 		assert.NoError(t, err)
 
 		// Update the counter for the next iteration
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created
 		searchCriteria := &models.SearchCriteria{
@@ -985,7 +985,7 @@ func TestMovePerson(t *testing.T) {
 		{
 			transactionID: "2065/19_tr_01",
 			parent:        "Minister of Agriculture and Food Security",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         personName,
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -1043,7 +1043,7 @@ func TestMovePerson(t *testing.T) {
 	oldMinisterResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Organisation",
-			Minor: "minister",
+			Minor: "cabinetMinister",
 		},
 		Name: "Minister of Agriculture and Food Security",
 	})
@@ -1070,7 +1070,7 @@ func TestMovePerson(t *testing.T) {
 	newMinisterResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Organisation",
-			Minor: "minister",
+			Minor: "cabinetMinister",
 		},
 		Name: "Minister of Environment and Climate Change",
 	})
@@ -1120,7 +1120,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Foreign Affairs and International Trade",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2020-01-01",
 			president:     "Ranil Wickremesinghe",
@@ -1130,7 +1130,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Justice and Law and Order",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2020-01-01",
 			president:     "Ranil Wickremesinghe",
@@ -1140,7 +1140,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 			parent:        "Ranil Wickremesinghe",
 			parentType:    "citizen",
 			child:         "Minister of Education and Vocational Development",
-			childType:     "minister",
+			childType:     "cabinetMinister",
 			relType:       "AS_MINISTER",
 			date:          "2020-01-01",
 			president:     "Ranil Wickremesinghe",
@@ -1164,7 +1164,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 
 		_, err := client.AddOrgEntity(transaction, ministerEntityCounters)
 		assert.NoError(t, err)
-		ministerEntityCounters[tc.childType]++
+		ministerEntityCounters["minister"]++
 
 		// Verify the minister was created
 		searchCriteria := &models.SearchCriteria{
@@ -1195,7 +1195,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 		{
 			transactionID: "2068/20_tr_01",
 			parent:        "Minister of Foreign Affairs and International Trade",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Alice Brown",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -1205,7 +1205,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 		{
 			transactionID: "2068/20_tr_02",
 			parent:        "Minister of Justice and Law and Order",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Bob Wilson",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -1215,7 +1215,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 		{
 			transactionID: "2068/20_tr_03",
 			parent:        "Minister of Education and Vocational Development",
-			parentType:    "minister",
+			parentType:    "cabinetMinister",
 			child:         "Carol Davis",
 			childType:     "citizen",
 			relType:       "AS_APPOINTED",
@@ -1325,7 +1325,7 @@ func TestSwapMultiplePeople(t *testing.T) {
 		ministerResults, err := client.SearchEntities(&models.SearchCriteria{
 			Kind: &models.Kind{
 				Major: "Organisation",
-				Minor: "minister",
+				Minor: "cabinetMinister",
 			},
 			Name: ministerName,
 		})
