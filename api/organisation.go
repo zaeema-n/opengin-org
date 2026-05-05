@@ -196,6 +196,12 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 		return 0, fmt.Errorf("failed to update parent entity: %w", err)
 	}
 
+	if isMinisterType(childType) {
+		if err := c.ensureMinisterOrgStructure(createdChild.ID, dateISO, ""); err != nil {
+			return 0, fmt.Errorf("failed to ensure minister org structure: %w", err)
+		}
+	}
+
 	return entityCounter, nil
 }
 
