@@ -140,9 +140,6 @@ func (c *Client) AddPersonEntity(transaction map[string]interface{}, entityCount
 		if err != nil {
 			return 0, err
 		}
-		if err := c.ensureRoleNodeHasNoActiveAssignment(targetNodeID, dateISO); err != nil {
-			return 0, err
-		}
 		if err := c.createASRole(childID, targetNodeID, dateISO); err != nil {
 			return 0, err
 		}
@@ -316,10 +313,6 @@ func (c *Client) MovePerson(transaction map[string]interface{}) error {
 	}
 	if len(roleRels) == 0 {
 		return fmt.Errorf("no AS_ROLE to '%s' role slot active for person '%s' under minister '%s' at %s", role, child, oldParent, dateISO)
-	}
-
-	if err := c.ensureRoleNodeHasNoActiveAssignment(newTargetNodeID, dateISO); err != nil {
-		return err
 	}
 
 	for _, rel := range roleRels {
