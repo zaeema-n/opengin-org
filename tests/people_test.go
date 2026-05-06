@@ -1108,10 +1108,6 @@ func TestMovePerson(t *testing.T) {
 	assert.True(t, found, "Should find the new relationship")
 }
 
-/*
-	TestSwapMultiplePeople — DISABLED: same-day cyclic portfolio swaps conflict with MovePerson's
-	ensureRoleNodeHasNoActiveAssignment check. Re-enable after batch/two-phase move semantics or a relaxed rule.
-
 func TestSwapMultiplePeople(t *testing.T) {
 	// Initialize entity counters
 	ministerEntityCounters := map[string]int{
@@ -1364,4 +1360,3 @@ func TestSwapMultiplePeople(t *testing.T) {
 		assert.True(t, terminatedFound, "Should have at least one terminated prior AS_ROLE for %s", personName)
 	}
 }
-*/
