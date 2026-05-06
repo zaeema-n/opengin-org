@@ -5,6 +5,8 @@ import (
 
 	"orgchart_nexoan/internal/utils"
 	"orgchart_nexoan/models"
+
+	"github.com/google/uuid"
 )
 
 // CreateGovernmentNode creates the initial government node
@@ -30,6 +32,46 @@ func (c *Client) CreateGovernmentNode() (*models.Entity, error) {
 	}
 
 	return createdEntity, nil
+}
+
+func (c *Client) ensureGovernmentHasNoActivePresident(governmentID, dateISO string) error {
+	existing, err := c.GetRelatedEntities(governmentID, &models.Relationship{
+		Name:      "AS_PRESIDENT",
+		ActiveAt:  dateISO,
+		Direction: "OUTGOING",
+	})
+	if err != nil {
+		return fmt.Errorf("failed to check existing president relationships for government '%s': %w", governmentID, err)
+	}
+	if len(existing) > 0 {
+		return fmt.Errorf("government '%s' already has an active AS_PRESIDENT relationship at %s", governmentID, dateISO)
+	}
+	return nil
+}
+
+func (c *Client) createASPresidentRelationship(governmentID, personID, startTime string) error {
+	relID := fmt.Sprintf("%s_%s_%s", governmentID, personID, uuid.New().String())
+	_, err := c.UpdateEntity(governmentID, &models.Entity{
+		ID:         governmentID,
+		Metadata:   []models.MetadataEntry{},
+		Attributes: []models.AttributeEntry{},
+		Relationships: []models.RelationshipEntry{
+			{
+				Key: relID,
+				Value: models.Relationship{
+					RelatedEntityID: personID,
+					Name:            "AS_PRESIDENT",
+					StartTime:       startTime,
+					EndTime:         "",
+					ID:              relID,
+				},
+			},
+		},
+	})
+	if err != nil {
+		return fmt.Errorf("failed to add AS_PRESIDENT relationship: %w", err)
+	}
+	return nil
 }
 
 // GetPresidentByGovernment retrieves a president entity (citizen with AS_PRESIDENT relationship to government) by name
