@@ -1360,3 +1360,120 @@ func TestSwapMultiplePeople(t *testing.T) {
 		assert.True(t, terminatedFound, "Should have at least one terminated prior AS_ROLE for %s", personName)
 	}
 }
+
+func TestGovernmentRoleBasedAddTerminateMove(t *testing.T) {
+	personCounters := map[string]int{
+		"citizen": 0,
+	}
+
+	personName := "Government Role Test Person"
+	addTransaction := map[string]interface{}{
+		"transaction_id": "2999-01_tr_01",
+		"parent":         "Government of Sri Lanka",
+		"parent_type":    "government",
+		"child":          personName,
+		"child_type":     "citizen",
+		"role":           "president",
+		"date":           "2026-01-01",
+	}
+	_, err := client.AddPersonEntity(addTransaction, personCounters)
+	assert.NoError(t, err)
+
+	governmentResults, err := client.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{
+			Major: "Organisation",
+			Minor: "government",
+		},
+		Name: "Government of Sri Lanka",
+	})
+	assert.NoError(t, err)
+	assert.Len(t, governmentResults, 1)
+	governmentID := governmentResults[0].ID
+	presidentNodeID := governmentID + "_president"
+	primeMinisterNodeID := governmentID + "_prime_minister"
+
+	personResults, err := client.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{
+			Major: "Person",
+			Minor: "citizen",
+		},
+		Name: personName,
+	})
+	assert.NoError(t, err)
+	assert.Len(t, personResults, 1)
+	personID := personResults[0].ID
+
+	presidentRoleRels, err := client.GetRelatedEntities(personID, &models.Relationship{
+		Name:            "AS_ROLE",
+		RelatedEntityID: presidentNodeID,
+	})
+	assert.NoError(t, err)
+	assert.Len(t, presidentRoleRels, 1, "person should have AS_ROLE to government president node")
+	assert.Equal(t, "", presidentRoleRels[0].EndTime)
+
+	terminateTransaction := map[string]interface{}{
+		"transaction_id": "2999-01_tr_02",
+		"parent":         "Government of Sri Lanka",
+		"parent_type":    "government",
+		"child":          personName,
+		"child_type":     "citizen",
+		"role":           "president",
+		"date":           "2026-01-02",
+	}
+	err = client.TerminatePersonEntity(terminateTransaction)
+	assert.NoError(t, err)
+
+	presidentRoleRels, err = client.GetRelatedEntities(personID, &models.Relationship{
+		Name:            "AS_ROLE",
+		RelatedEntityID: presidentNodeID,
+	})
+	assert.NoError(t, err)
+	assert.Len(t, presidentRoleRels, 1)
+	assert.Equal(t, "2026-01-02T00:00:00Z", presidentRoleRels[0].EndTime)
+
+	reAddTransaction := map[string]interface{}{
+		"transaction_id": "2999-01_tr_03",
+		"parent":         "Government of Sri Lanka",
+		"parent_type":    "government",
+		"child":          personName,
+		"child_type":     "citizen",
+		"role":           "president",
+		"date":           "2026-01-03",
+	}
+	_, err = client.AddPersonEntity(reAddTransaction, personCounters)
+	assert.NoError(t, err)
+
+	moveTransaction := map[string]interface{}{
+		"transaction_id": "2999-01_tr_04",
+		"old_parent":     "Government of Sri Lanka",
+		"new_parent":     "Government of Sri Lanka",
+		"old_role":       "president",
+		"new_role":       "prime_minister",
+		"child":          personName,
+		"child_type":     "citizen",
+		"date":           "2026-01-04",
+	}
+	err = client.MovePerson(moveTransaction)
+	assert.Error(t, err)
+
+	presidentRoleRels, err = client.GetRelatedEntities(personID, &models.Relationship{
+		Name:            "AS_ROLE",
+		RelatedEntityID: presidentNodeID,
+	})
+	assert.NoError(t, err)
+	hasActivePresidentRole := false
+	for _, rel := range presidentRoleRels {
+		if rel.EndTime == "" {
+			hasActivePresidentRole = true
+			break
+		}
+	}
+	assert.True(t, hasActivePresidentRole, "president role should remain active when government move is unsupported")
+
+	primeMinisterRoleRels, err := client.GetRelatedEntities(personID, &models.Relationship{
+		Name:            "AS_ROLE",
+		RelatedEntityID: primeMinisterNodeID,
+	})
+	assert.NoError(t, err)
+	assert.Len(t, primeMinisterRoleRels, 0, "no prime minister role should be created by unsupported move")
+}

@@ -12,7 +12,7 @@ import (
 
 // GetMinisterByPresident retrieves a minister entity by president name and minister name
 func (c *Client) GetMinisterByPresident(presidentName, ministerName string) (*models.Entity, error) {
-	// Get the president entity using the helper function
+	// Get the president entity using the helper function.
 	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
 	if err != nil {
 		return nil, err
@@ -63,7 +63,7 @@ func (c *Client) GetMinisterByPresident(presidentName, ministerName string) (*mo
 // Returns an error if multiple active ministers with the same name are found
 func (c *Client) GetActiveMinisterByPresident(presidentName, ministerName, dateISO string) (*models.Entity, error) {
 	// Get the president entity using the helper function
-	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
+	presidentEntity, err := c.GetPresidentByGovernment(presidentName, dateISO)
 	if err != nil {
 		return nil, err
 	}
@@ -239,7 +239,7 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 
 	// Terminate the old minister's relationship with the president directly
 	// We need to get the president ID first
-	presidentEntity, err := c.GetPresidentByGovernment(presidentName)
+	presidentEntity, err := c.GetPresidentByGovernment(presidentName, dateISO)
 	if err != nil {
 		return 0, fmt.Errorf("failed to get president entity: %w", err)
 	}
@@ -491,14 +491,14 @@ func (c *Client) MoveMinister(transaction map[string]interface{}) error {
 	dateISO := date.Format(time.RFC3339)
 
 	// --- Get the new president (parent) entity ID ---
-	newPresidentEntity, err := c.GetPresidentByGovernment(newParent)
+	newPresidentEntity, err := c.GetPresidentByGovernment(newParent, dateISO)
 	if err != nil {
 		return fmt.Errorf("failed to get new president entity: %w", err)
 	}
 	newParentID := newPresidentEntity.ID
 
 	// --- Get the old president (parent) entity ID ---
-	oldPresidentEntity, err := c.GetPresidentByGovernment(oldParent)
+	oldPresidentEntity, err := c.GetPresidentByGovernment(oldParent, dateISO)
 	if err != nil {
 		return fmt.Errorf("failed to get old president entity: %w", err)
 	}

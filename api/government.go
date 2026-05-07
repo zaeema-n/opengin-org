@@ -5,8 +5,6 @@ import (
 
 	"orgchart_nexoan/internal/utils"
 	"orgchart_nexoan/models"
-
-	"github.com/google/uuid"
 )
 
 // CreateGovernmentNode creates the initial government node
@@ -30,53 +28,43 @@ func (c *Client) CreateGovernmentNode() (*models.Entity, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to create government entity: %w", err)
 	}
+	if err := c.ensureGovernmentOrgStructure(createdEntity.ID, createdEntity.Created, ""); err != nil {
+		return nil, fmt.Errorf("failed to create government org structure: %w", err)
+	}
 
 	return createdEntity, nil
 }
 
-func (c *Client) ensureGovernmentHasNoActivePresident(governmentID, dateISO string) error {
-	existing, err := c.GetRelatedEntities(governmentID, &models.Relationship{
-		Name:      "AS_PRESIDENT",
-		ActiveAt:  dateISO,
-		Direction: "OUTGOING",
-	})
-	if err != nil {
-		return fmt.Errorf("failed to check existing president relationships for government '%s': %w", governmentID, err)
-	}
-	if len(existing) > 0 {
-		return fmt.Errorf("government '%s' already has an active AS_PRESIDENT relationship at %s", governmentID, dateISO)
-	}
-	return nil
-}
-
-func (c *Client) createASPresidentRelationship(governmentID, personID, startTime string) error {
-	relID := fmt.Sprintf("%s_%s_%s", governmentID, personID, uuid.New().String())
-	_, err := c.UpdateEntity(governmentID, &models.Entity{
-		ID:         governmentID,
-		Metadata:   []models.MetadataEntry{},
-		Attributes: []models.AttributeEntry{},
-		Relationships: []models.RelationshipEntry{
-			{
-				Key: relID,
-				Value: models.Relationship{
-					RelatedEntityID: personID,
-					Name:            "AS_PRESIDENT",
-					StartTime:       startTime,
-					EndTime:         "",
-					ID:              relID,
-				},
-			},
+func (c *Client) getGovernmentEntityIDByName(governmentName string) (string, error) {
+	searchResults, err := c.SearchEntities(&models.SearchCriteria{
+		Kind: &models.Kind{
+			Major: "Organisation",
+			Minor: "government",
 		},
+		Name: governmentName,
 	})
 	if err != nil {
-		return fmt.Errorf("failed to add AS_PRESIDENT relationship: %w", err)
+		return "", fmt.Errorf("failed to search for government entity: %w", err)
 	}
-	return nil
+	searchResults = utils.FilterByExactName(searchResults, governmentName)
+	if len(searchResults) == 0 {
+		return "", fmt.Errorf("government entity not found: %s", governmentName)
+	}
+	if len(searchResults) > 1 {
+		return "", fmt.Errorf("multiple government entities found with name '%s'", governmentName)
+	}
+	return searchResults[0].ID, nil
 }
 
-// GetPresidentByGovernment retrieves a president entity (citizen with AS_PRESIDENT relationship to government) by name
-func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity, error) {
-	// Get the president entity ID - presidents are citizens with AS_PRESIDENT relationship
+// GetPresidentByGovernment retrieves a president entity by name using government president-role assignment.
+// Pass an optional dateISO to require the assignment to be active at that date.
+func (c *Client) GetPresidentByGovernment(presidentName string, dateISO ...string) (*models.Entity, error) {
+	activeAt := ""
+	if len(dateISO) > 0 && dateISO[0] != "" {
+		activeAt = dateISO[0]
+	}
+
+	// Get the president entity ID.
 	presidentResults, err := c.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Person",
@@ -100,48 +88,48 @@ func (c *Client) GetPresidentByGovernment(presidentName string) (*models.Entity,
 		return nil, fmt.Errorf("multiple entities found with name '%s'", presidentName)
 	}
 
-	// Get government node
-	governmentResults, err := c.SearchEntities(&models.SearchCriteria{
-		Kind: &models.Kind{
-			Major: "Organisation",
-			Minor: "government",
-		},
-	})
-	if err != nil || len(governmentResults) == 0 {
-		return nil, fmt.Errorf("failed to find government entity: %w", err)
+	governmentID, err := c.getGovernmentEntityIDByName("Government of Sri Lanka")
+	if err != nil {
+		return nil, err
 	}
-	governmentID := governmentResults[0].ID
+	presidentNodeID, err := governmentRoleNodeID(governmentID, "president")
+	if err != nil {
+		return nil, err
+	}
 
-	// Find the president by checking if they have AS_PRESIDENT relationship to government
+	// Find the president by checking if they have AS_ROLE relationship to the government's president role node.
 	for _, president := range presidentResults {
-		// Check if this citizen has AS_PRESIDENT relationship to government
-		presidentRelations, err := c.GetRelatedEntities(governmentID, &models.Relationship{
-			Name:            "AS_PRESIDENT",
-			RelatedEntityID: president.ID,
+		relCriteria := &models.Relationship{
+			Name:            "AS_ROLE",
+			RelatedEntityID: presidentNodeID,
 			Direction:       "OUTGOING",
-		})
-		if err != nil {
+		}
+		if activeAt != "" {
+			relCriteria.ActiveAt = activeAt
+		}
+		// Check if this citizen has AS_ROLE relationship to the president role node.
+		presidentRelations, err := c.GetRelatedEntities(president.ID, relCriteria)
+		if err != nil || len(presidentRelations) == 0 {
 			continue
 		}
-
-		// If there are any AS_PRESIDENT relationships (active or not), return the president
-		if len(presidentRelations) > 0 {
-			// Convert SearchResult to Entity
-			entity := &models.Entity{
-				ID:         president.ID,
-				Kind:       president.Kind,
-				Created:    president.Created,
-				Terminated: president.Terminated,
-				Name: models.TimeBasedValue{
-					Value: president.Name,
-				},
-				Metadata:      []models.MetadataEntry{},
-				Attributes:    []models.AttributeEntry{},
-				Relationships: []models.RelationshipEntry{},
-			}
-			return entity, nil
+		// Convert SearchResult to Entity
+		entity := &models.Entity{
+			ID:         president.ID,
+			Kind:       president.Kind,
+			Created:    president.Created,
+			Terminated: president.Terminated,
+			Name: models.TimeBasedValue{
+				Value: president.Name,
+			},
+			Metadata:      []models.MetadataEntry{},
+			Attributes:    []models.AttributeEntry{},
+			Relationships: []models.RelationshipEntry{},
 		}
+		return entity, nil
 	}
 
+	if activeAt != "" {
+		return nil, fmt.Errorf("president entity not found or not active at %s: %s", activeAt, presidentName)
+	}
 	return nil, fmt.Errorf("president entity not found or not active: %s", presidentName)
 }

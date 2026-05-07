@@ -34,10 +34,11 @@ func TestMain(m *testing.M) {
 	presidentTransaction := map[string]interface{}{
 		"parent":         "Government of Sri Lanka",
 		"child":          "Ranil Wickremesinghe",
-		"date":           "2019-12-01",
+		// Use an early baseline date so downstream fixture dates are chronologically valid.
+		"date":           "2018-01-01",
 		"parent_type":    "government",
 		"child_type":     "citizen",
-		"rel_type":       "AS_PRESIDENT",
+		"role":           "president",
 		"transaction_id": "2152-12_tr_01",
 	}
 	_, err = client.AddPersonEntity(presidentTransaction, entityCounters)
@@ -361,7 +362,7 @@ func TestTerminateMinister(t *testing.T) {
 	err := client.TerminateOrgEntity(transaction)
 	assert.NoError(t, err)
 
-	// Find the president to verify the relationship - presidents are citizens with AS_PRESIDENT relationship
+	// Find the president to verify the role assignment under government.
 	presResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Person",
@@ -372,8 +373,9 @@ func TestTerminateMinister(t *testing.T) {
 	assert.NoError(t, err)
 	presResults = utils.FilterByExactName(presResults, "Ranil Wickremesinghe")
 	assert.Len(t, presResults, 1)
+	presID := presResults[0].ID
 
-	// Get government node to check AS_PRESIDENT relationship
+	// Get government node to check AS_ROLE relationship to the president role node.
 	governmentResults, err := client.SearchEntities(&models.SearchCriteria{
 		Kind: &models.Kind{
 			Major: "Organisation",
@@ -382,17 +384,16 @@ func TestTerminateMinister(t *testing.T) {
 	})
 	assert.NoError(t, err)
 	assert.Len(t, governmentResults, 1)
+	presidentRoleNodeID := governmentResults[0].ID + "_president"
 
-	// Verify this citizen has AS_PRESIDENT relationship to government
-	presidentRelations, err := client.GetRelatedEntities(governmentResults[0].ID, &models.Relationship{
-		Name:            "AS_PRESIDENT",
-		RelatedEntityID: presResults[0].ID,
+	// Verify this citizen has AS_ROLE relationship to the government president role node.
+	presidentRelations, err := client.GetRelatedEntities(presID, &models.Relationship{
+		Name:            "AS_ROLE",
+		RelatedEntityID: presidentRoleNodeID,
 	})
 	assert.NoError(t, err)
-	assert.Len(t, presidentRelations, 1, "Should find AS_PRESIDENT relationship")
-	assert.Equal(t, "", presidentRelations[0].EndTime, "AS_PRESIDENT relationship should be active")
-
-	presID := presResults[0].ID
+	assert.Len(t, presidentRelations, 1, "Should find AS_ROLE relationship to the government president role node")
+	assert.Equal(t, "", presidentRelations[0].EndTime, "President AS_ROLE relationship should be active")
 
 	// Find the minister
 	ministerResults, err := client.SearchEntities(&models.SearchCriteria{

@@ -51,6 +51,61 @@ func (c *Client) ensureMinisterOrgStructure(ministerID, start, end string) error
 	return nil
 }
 
+func governmentRoleNodeID(governmentID, role string) (string, error) {
+	switch role {
+	case "president":
+		return fmt.Sprintf("%s_president", governmentID), nil
+	case "prime_minister":
+		return fmt.Sprintf("%s_prime_minister", governmentID), nil
+	default:
+		return "", fmt.Errorf("invalid government role '%s': expected 'president' or 'prime_minister'", role)
+	}
+}
+
+func (c *Client) ensureGovernmentOrgStructure(governmentID, start, end string) error {
+	existingOrgRels, err := c.GetRelatedEntities(governmentID, &models.Relationship{
+		Name: "AS_ORGANISATION",
+	})
+	if err != nil {
+		return fmt.Errorf("failed to check existing AS_ORGANISATION relationship for government: %w", err)
+	}
+	if len(existingOrgRels) > 0 {
+		return nil
+	}
+
+	orgID := fmt.Sprintf("%s_org", governmentID)
+	presidentNodeID, err := governmentRoleNodeID(governmentID, "president")
+	if err != nil {
+		return err
+	}
+	primeMinisterNodeID, err := governmentRoleNodeID(governmentID, "prime_minister")
+	if err != nil {
+		return err
+	}
+
+	if err := c.ensureOrgStructureNode(orgID, "Organisation", start, end); err != nil {
+		return err
+	}
+	if err := c.ensureOrgStructureNode(presidentNodeID, "President", start, end); err != nil {
+		return err
+	}
+	if err := c.ensureOrgStructureNode(primeMinisterNodeID, "Prime Minister", start, end); err != nil {
+		return err
+	}
+
+	if err := c.addRelationshipIfMissing(governmentID, orgID, "AS_ORGANISATION", start, end); err != nil {
+		return err
+	}
+	if err := c.addRelationshipIfMissing(presidentNodeID, orgID, "IS_UNDER", start, end); err != nil {
+		return err
+	}
+	if err := c.addRelationshipIfMissing(primeMinisterNodeID, presidentNodeID, "IS_UNDER", start, end); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *Client) ensureOrgStructureNode(nodeID, name, start, end string) error {
 	results, err := c.SearchEntities(&models.SearchCriteria{ID: nodeID})
 	if err != nil {

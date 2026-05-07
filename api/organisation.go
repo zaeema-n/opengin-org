@@ -64,8 +64,8 @@ func (c *Client) AddOrgEntity(transaction map[string]interface{}, entityCounters
 		// 	return 0, fmt.Errorf("minister '%s' already exists under president '%s'", child, parent)
 		// }
 
-		// Get the president entity
-		presidentEntity, err := c.GetPresidentByGovernment(parent)
+		// Get the president entity active at transaction date.
+		presidentEntity, err := c.GetPresidentByGovernment(parent, dateISO)
 		if err != nil {
 			return 0, fmt.Errorf("failed to get parent president entity: %w", err)
 		}
@@ -228,7 +228,7 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 	// Handle parent entity retrieval
 	if parentType == "president" {
 		// Parent is a president - use the helper function
-		presidentEntity, err := c.GetPresidentByGovernment(parent)
+		presidentEntity, err := c.GetPresidentByGovernment(parent, dateISO)
 		if err != nil {
 			return fmt.Errorf("failed to get parent president entity: %w", err)
 		}
