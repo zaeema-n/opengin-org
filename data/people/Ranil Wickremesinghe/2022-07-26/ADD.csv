@@ -23,4 +23,4 @@ transaction_id,parent,parent_type,child,child_type,rel_type,role,date
 2290-17_tr_22,Minister of Public Security,cabinetMinister,Tiran Alles,citizen,AS_APPOINTED,minister,2022-07-26
 2290-17_tr_23,"Minister of Trade, Commerce and Food Security",cabinetMinister,Kachchakaduge Nalin Ruwanjiwa Fernando,citizen,AS_APPOINTED,minister,2022-07-26
 2290-17_tr_24,Minister of Defence,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,minister,2022-07-26
-2290-17_tr_25,Government of Sri Lanka,government,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_PRIME_MINISTER,,2022-07-26
+2290-17_tr_25,Government of Sri Lanka,government,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_PRIME_MINISTER,prime_minister,2022-07-26

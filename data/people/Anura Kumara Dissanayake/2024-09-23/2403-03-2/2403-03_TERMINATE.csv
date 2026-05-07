@@ -1,5 +1,5 @@
 transaction_id,parent,parent_type,child,child_type,rel_type,role,date
-2403-03-02_tr_01,Government of Sri Lanka,government,Ranil Wickremesinghe,citizen,AS_PRESIDENT,,2024-09-23
+2403-03-02_tr_01,Government of Sri Lanka,government,Ranil Wickremesinghe,citizen,AS_PRESIDENT,president,2024-09-23
 2403-03-02_tr_02,"Minister of Ports, Shipping and Aviation",cabinetMinister,Nimal Siripala De Silva,citizen,AS_APPOINTED,minister,2024-09-23
 2403-03-02_tr_03,Minister of Education,cabinetMinister,Achchige Don Susil Premajayanth,citizen,AS_APPOINTED,minister,2024-09-23
 2403-03-02_tr_04,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Vanniarachchi Pavithra Devi,citizen,AS_APPOINTED,minister,2024-09-23
