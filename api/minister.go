@@ -225,10 +225,22 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 	}
 
 	// Move all active AS_ROLE assignments from old role nodes to new role nodes.
-	oldMinisterNodeID, _ := roleNodeID(oldMinisterID, "minister")
-	oldSecretaryNodeID, _ := roleNodeID(oldMinisterID, "secretary")
-	newMinisterNodeID, _ := roleNodeID(newMinisterID, "minister")
-	newSecretaryNodeID, _ := roleNodeID(newMinisterID, "secretary")
+	oldMinisterNodeID, err := roleNodeID(oldMinisterID, "minister")
+	if err != nil {
+		return 0, fmt.Errorf("failed to resolve old minister role node id: %w", err)
+	}
+	oldSecretaryNodeID, err := roleNodeID(oldMinisterID, "secretary")
+	if err != nil {
+		return 0, fmt.Errorf("failed to resolve old secretary role node id: %w", err)
+	}
+	newMinisterNodeID, err := roleNodeID(newMinisterID, "minister")
+	if err != nil {
+		return 0, fmt.Errorf("failed to resolve new minister role node id: %w", err)
+	}
+	newSecretaryNodeID, err := roleNodeID(newMinisterID, "secretary")
+	if err != nil {
+		return 0, fmt.Errorf("failed to resolve new secretary role node id: %w", err)
+	}
 
 	if err := c.moveIncomingASRoles(oldMinisterNodeID, newMinisterNodeID, dateISO); err != nil {
 		return 0, fmt.Errorf("failed to move minister role assignments during rename: %w", err)
@@ -284,6 +296,10 @@ func (c *Client) RenameMinister(transaction map[string]interface{}, entityCounte
 	_, err = c.UpdateEntity(presidentID, terminateRelationship)
 	if err != nil {
 		return 0, fmt.Errorf("failed to terminate old minister's government relationship: %w", err)
+	}
+
+	if err := c.terminateOrganisationStructureRelationship(oldMinisterID, dateISO); err != nil {
+		return 0, fmt.Errorf("failed to terminate old minister AS_ORGANISATION: %w", err)
 	}
 
 	// Create RENAMED_TO relationship
@@ -421,8 +437,14 @@ func (c *Client) MergeMinisters(transaction map[string]interface{}, entityCounte
 		}
 
 		// 2. Terminate all active AS_ROLE assignments under old minister role nodes.
-		oldMinisterNodeID, _ := roleNodeID(oldMinisterID, "minister")
-		oldSecretaryNodeID, _ := roleNodeID(oldMinisterID, "secretary")
+		oldMinisterNodeID, err := roleNodeID(oldMinisterID, "minister")
+		if err != nil {
+			return 0, fmt.Errorf("failed to resolve old minister role node id during merge: %w", err)
+		}
+		oldSecretaryNodeID, err := roleNodeID(oldMinisterID, "secretary")
+		if err != nil {
+			return 0, fmt.Errorf("failed to resolve old secretary role node id during merge: %w", err)
+		}
 		if err := c.terminateIncomingASRoles(oldMinisterNodeID, dateISO); err != nil {
 			return 0, fmt.Errorf("failed to terminate minister role assignments during merge: %w", err)
 		}

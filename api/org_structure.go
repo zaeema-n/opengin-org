@@ -15,7 +15,8 @@ import (
 // if AS_ORGANISATION already exists on the minister, the helper returns without changes.
 func (c *Client) ensureMinisterOrgStructure(ministerID, start, end string) error {
 	existingOrgRels, err := c.GetRelatedEntities(ministerID, &models.Relationship{
-		Name: "AS_ORGANISATION",
+		Name:     "AS_ORGANISATION",
+		ActiveAt: start,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to check existing AS_ORGANISATION relationship: %w", err)
@@ -51,6 +52,27 @@ func (c *Client) ensureMinisterOrgStructure(ministerID, start, end string) error
 	return nil
 }
 
+// terminateOrganisationStructureRelationship ends every active AS_ORGANISATION edge from rootEntityID
+// to its org-structure root node ({rootEntityID}_org). Used for ministers and government.
+// Queries relationships active at dateISO (ActiveAt). If none exist, this is a no-op.
+func (c *Client) terminateOrganisationStructureRelationship(rootEntityID, dateISO string) error {
+	orgID := fmt.Sprintf("%s_org", rootEntityID)
+	rels, err := c.GetRelatedEntities(rootEntityID, &models.Relationship{
+		Name:            "AS_ORGANISATION",
+		RelatedEntityID: orgID,
+		ActiveAt:        dateISO,
+	})
+	if err != nil {
+		return fmt.Errorf("failed to get AS_ORGANISATION relationships for entity %s: %w", rootEntityID, err)
+	}
+	for _, rel := range rels {
+		if err := c.terminateRelationship(rootEntityID, rel.ID, dateISO); err != nil {
+			return fmt.Errorf("failed to terminate AS_ORGANISATION for entity %s: %w", rootEntityID, err)
+		}
+	}
+	return nil
+}
+
 func governmentRoleNodeID(governmentID, role string) (string, error) {
 	switch role {
 	case "president":
@@ -64,7 +86,8 @@ func governmentRoleNodeID(governmentID, role string) (string, error) {
 
 func (c *Client) ensureGovernmentOrgStructure(governmentID, start, end string) error {
 	existingOrgRels, err := c.GetRelatedEntities(governmentID, &models.Relationship{
-		Name: "AS_ORGANISATION",
+		Name:     "AS_ORGANISATION",
+		ActiveAt: start,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to check existing AS_ORGANISATION relationship for government: %w", err)
@@ -142,6 +165,7 @@ func (c *Client) addRelationshipIfMissing(sourceID, targetID, relName, start, en
 	existing, err := c.GetRelatedEntities(sourceID, &models.Relationship{
 		RelatedEntityID: targetID,
 		Name:            relName,
+		ActiveAt:        start,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to check existing relationship %s (%s -> %s): %w", relName, sourceID, targetID, err)

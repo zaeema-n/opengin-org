@@ -423,8 +423,14 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 	// If we're terminating a minister, also terminate all active role assignments
 	// under the minister and secretary org-structure nodes.
 	if isMinisterType(childType) {
-		ministerNodeID, _ := roleNodeID(childID, "minister")
-		secretaryNodeID, _ := roleNodeID(childID, "secretary")
+		ministerNodeID, err := roleNodeID(childID, "minister")
+		if err != nil {
+			return fmt.Errorf("failed to resolve minister org-structure role node id: %w", err)
+		}
+		secretaryNodeID, err := roleNodeID(childID, "secretary")
+		if err != nil {
+			return fmt.Errorf("failed to resolve secretary org-structure role node id: %w", err)
+		}
 
 		if err := c.terminateIncomingASRoles(ministerNodeID, dateISO); err != nil {
 			return fmt.Errorf("failed to terminate role assignments on minister node: %w", err)
@@ -432,6 +438,10 @@ func (c *Client) TerminateOrgEntity(transaction map[string]interface{}) error {
 		if err := c.terminateIncomingASRoles(secretaryNodeID, dateISO); err != nil {
 			return fmt.Errorf("failed to terminate role assignments on secretary node: %w", err)
 		}
+	}
+	// Ministers, government, and any future root using {id}_org: no-op if no AS_ORGANISATION exists.
+	if err := c.terminateOrganisationStructureRelationship(childID, dateISO); err != nil {
+		return fmt.Errorf("failed to terminate AS_ORGANISATION: %w", err)
 	}
 
 	return nil

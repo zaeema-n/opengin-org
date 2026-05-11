@@ -416,6 +416,15 @@ func TestTerminateMinister(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Len(t, relations, 1, "Should find one relationship")
 	assert.Equal(t, "2024-01-01T00:00:00Z", relations[0].EndTime, "Relationship should be terminated")
+
+	orgID := fmt.Sprintf("%s_org", ministerID)
+	asOrgRels, err := client.GetRelatedEntities(ministerID, &models.Relationship{
+		RelatedEntityID: orgID,
+		Name:            "AS_ORGANISATION",
+	})
+	assert.NoError(t, err)
+	assert.Len(t, asOrgRels, 1, "Should find AS_ORGANISATION to org node")
+	assert.Equal(t, "2024-01-01T00:00:00Z", asOrgRels[0].EndTime, "AS_ORGANISATION should be terminated with the minister")
 }
 
 func TestMoveDepartment(t *testing.T) {
@@ -608,6 +617,15 @@ func TestRenameMinister(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Len(t, presidentRelations, 1)
 	assert.Equal(t, "2024-01-01T00:00:00Z", presidentRelations[0].EndTime)
+
+	oldOrgID := fmt.Sprintf("%s_org", oldMinisterID)
+	asOrgRels, err := client.GetRelatedEntities(oldMinisterID, &models.Relationship{
+		RelatedEntityID: oldOrgID,
+		Name:            "AS_ORGANISATION",
+	})
+	assert.NoError(t, err)
+	assert.Len(t, asOrgRels, 1, "old minister should have AS_ORGANISATION to org node")
+	assert.Equal(t, "2024-01-01T00:00:00Z", asOrgRels[0].EndTime, "AS_ORGANISATION should end when portfolio is renamed")
 
 	// Verify the new minister has the president relationship
 	newPresidentRelations, err := client.GetRelatedEntities(presidentID, &models.Relationship{
