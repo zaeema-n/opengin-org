@@ -1,4 +1,6 @@
 transaction_id,parent,parent_type,child,child_type,rel_type,date
+2153-12_tr_01,Gotabaya Rajapaksa,citizen,Minister of Transport Services Management,cabinetMinister,AS_MINISTER,2019-12-10
+2153-12_tr_02,Gotabaya Rajapaksa,citizen,Minister of Defence,cabinetMinister,AS_MINISTER,2019-12-10
 2153-12_tr_30,Minister of Defence,cabinetMinister,Office of the Chief of Defence Staff,department,AS_DEPARTMENT,2019-12-10
 2153-12_tr_31,Minister of Defence,cabinetMinister,Sri Lanka Army,department,AS_DEPARTMENT,2019-12-10
 2153-12_tr_32,Minister of Defence,cabinetMinister,Sri Lanka Navy,department,AS_DEPARTMENT,2019-12-10
