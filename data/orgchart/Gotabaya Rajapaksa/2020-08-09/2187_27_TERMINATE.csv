@@ -15,7 +15,6 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2187-27_tr_284,Minister of Highways,cabinetMinister,Road Maintenance Trust Fund,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_290,Minister of Transport,cabinetMinister,Werahara Engineering Services Ltd. (WESCO),department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_299,Minister of Youth and Sports,cabinetMinister,Provincial Sports Complexes,department,AS_DEPARTMENT,2020-08-09
-2187-27_tr_300,Minister of Youth and Sports,cabinetMinister,National Youth Awards Authority,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_348,Gotabaya Rajapaksa,citizen,State Minister of Economy and Policy Development,stateMinister,AS_MINISTER,2020-08-09
 2187-27_tr_349,Gotabaya Rajapaksa,citizen,State Minister of Highways Development,stateMinister,AS_MINISTER,2020-08-09
 2187-27_tr_350,Gotabaya Rajapaksa,citizen,State Minister of Housing,stateMinister,AS_MINISTER,2020-08-09
