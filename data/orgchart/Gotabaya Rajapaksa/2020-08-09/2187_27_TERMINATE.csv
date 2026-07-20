@@ -47,3 +47,4 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2187-27_tr_377,Gotabaya Rajapaksa,citizen,Minister of Women & Child Affairs and Social Security,cabinetMinister,AS_MINISTER,2020-08-09
 2187-27_tr_378,Gotabaya Rajapaksa,citizen,State Minister of Internal Trade and Consumer Welfare,stateMinister,AS_MINISTER,2020-08-09
 2187-27_tr_379,Gotabaya Rajapaksa,citizen,State Minister of Export Agriculture,stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_360,State Minister of Investment Promotions,stateMinister,"Investment in underutilized assets vested in the Secretary to the General Treasury under Act No. 43 of 2011",department,AS_DEPARTMENT,2020-08-09
