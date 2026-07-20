@@ -5,11 +5,8 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2187-27_tr_05,Minister of Defence,cabinetMinister,Department of Multi-purpose Development Task Force,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_09,"State Minister of Internal Security, Home Affairs and Disaster Management",stateMinister,National Police Academy,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_23,Gotabaya Rajapaksa,citizen,State Minister of Money and Capital Market and State Enterprise Reforms,stateMinister,AS_MINISTER,2020-08-09
-2187-27_tr_27,State Minister of Money and Capital Market and State Enterprise Reforms,stateMinister,Housing Development Finance Corporation,department,AS_DEPARTMENT,2020-08-09
-2187-27_tr_28,State Minister of Money and Capital Market and State Enterprise Reforms,stateMinister,State Mortgage and Investment Bank,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_29,State Minister of Money and Capital Market and State Enterprise Reforms,stateMinister,Institutions coming under the Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act vested to the Secretary to the Treasury,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_45,Gotabaya Rajapaksa,citizen,"State Minister of Samurdhi, Household Economy, Micro Finance, Self Employment, Business Development and Underutilized State Resources Development",stateMinister,AS_MINISTER,2020-08-09
-2187-27_tr_48,"State Minister of Samurdhi, Household Economy, Micro Finance, Self Employment, Business Development and Underutilized State Resources Development",stateMinister,Regional Development Bank,department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_64,Gotabaya Rajapaksa,citizen,"State Minister of National Heritage, Performing Arts and Rural Arts Promotion",stateMinister,AS_MINISTER,2020-08-09
 2187-27_tr_78,Gotabaya Rajapaksa,citizen,"State Minister of Rural Housing, Construction and Building Material Industries",stateMinister,AS_MINISTER,2020-08-09
 2187-27_tr_79,Gotabaya Rajapaksa,citizen,State Minister of Estate Housing and Community Infrastructure,stateMinister,AS_MINISTER,2020-08-09

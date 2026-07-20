@@ -13,11 +13,18 @@
 
 ./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2019-11-27/" -type person
 
+./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2019-12-10/2153-10-1/" -type person
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2019-12-10/"
+./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2019-12-10/" -type person
+
+./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2019-12-18/"
+./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2019-12-18/" -type person
+
 
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2019-12-21/"
 ./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2019-12-21/" -type person
 
+./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2019-12-30/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2019-12-31/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2020-01-09/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2020-01-13/"
