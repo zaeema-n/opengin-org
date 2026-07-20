@@ -19,6 +19,9 @@
 ./orgchart -data "$(pwd)/data/people/Ranil Wickremesinghe/2022-07-26/" -type person
 ./orgchart -data "$(pwd)/data/people/Ranil Wickremesinghe/2022-08-04/" -type person
 
+./orgchart -data "$(pwd)/data/orgchart/Ranil Wickremesinghe/2022-09-14/"
+./orgchart -data "$(pwd)/data/people/Ranil Wickremesinghe/2022-09-14/" -type person
+
 ./orgchart -data "$(pwd)/data/orgchart/Ranil Wickremesinghe/2022-09-16/"
 ./orgchart -data "$(pwd)/data/orgchart/Ranil Wickremesinghe/2022-10-05/"
 ./orgchart -data "$(pwd)/data/orgchart/Ranil Wickremesinghe/2022-10-26/"
