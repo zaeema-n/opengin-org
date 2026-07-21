@@ -1,6 +1,21 @@
 transaction_id,old_parent,new_parent,child,type,date,old_president_name,new_president_name
-2158-18_tr_01,Minister of Power & Energy,State Minister of Power,Lanka Electricity Company,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2158-18_tr_02,Minister of Power & Energy,State Minister of Power,Lanka Coal Company (Pvt.) Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2158-18_tr_03,Minister of Power & Energy,State Minister of Power,Sri Lanka Sustainable Energy Authority,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2158-18_tr_04,Minister of Power & Energy,State Minister of Energy,Ceylon Petroleum Storage Terminal Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2158-18_tr_05,Minister of Power & Energy,State Minister of Energy,Polipto Lanka (Pvt.) Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-18_tr_06,Minister of Power & Energy,State Minister of Power,Lanka Electricity Company,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-18_tr_07,Minister of Power & Energy,State Minister of Power,Lanka Coal Company (Pvt.) Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-18_tr_08,Minister of Power & Energy,State Minister of Power,Sri Lanka Sustainable Energy Authority,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-18_tr_09,Minister of Power & Energy,State Minister of Energy,Ceylon Petroleum Storage Terminal Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-18_tr_10,Minister of Power & Energy,State Minister of Energy,Polipto Lanka (Pvt.) Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_11,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,Department of Agriculture,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_12,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,Department of Agrarian Development,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_13,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,National Fertilizer Secretariat,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_14,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,Ceylon Fertilizer Company Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_15,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,Colombo Commercial Fertilizer Company,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_16,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Agriculture,Janatha Fertilizer Enterprises Ltd.,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_17,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Department of Irrigation,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_18,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Rural Revival Fund,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_19,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Rural Economic Revival Fund,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_20,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Janadiriya Fund (Gramodaya Council Fund),department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_21,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Department of Animal Production and Health,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_22,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,National Livestock Development Board,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_23,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Milco (Pvt.) Ltd and Associated Companies,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_24,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Irrigation and Rural Development,Mahaweli Livestock Enterprise Limited,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2158-17_tr_25,"Minister of Mahaweli, Agriculture, Irrigation and Rural Development",State Minister of Mahaweli Development,Paddy Marketing Board,department,2020-01-14,Gotabaya Rajapaksa,Gotabaya Rajapaksa
