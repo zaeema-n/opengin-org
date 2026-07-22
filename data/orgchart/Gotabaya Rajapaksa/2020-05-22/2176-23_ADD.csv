@@ -1,0 +1,5 @@
+transaction_id,parent,parent_type,child,child_type,rel_type,date
+2176-23_tr_01,Minister of Defence,cabinetMinister,"Department of Multi-purpose Development Task Force",department,AS_DEPARTMENT,2020-05-22
+2176-23_tr_02,Minister of Defence,cabinetMinister,"National Authority for the implementation of Chemical Weapons Convention",department,AS_DEPARTMENT,2020-05-22
+2176-23_tr_03,Minister of Defence,cabinetMinister,Api Wenuwen Api Fund,department,AS_DEPARTMENT,2020-05-22
+2176-23_tr_04,Minister of Defence,cabinetMinister,National Police Academy,department,AS_DEPARTMENT,2020-05-22
