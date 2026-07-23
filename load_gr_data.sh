@@ -168,5 +168,7 @@
 
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2022-07-14/"
 
+./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2022-07-15/"
+
 
 
