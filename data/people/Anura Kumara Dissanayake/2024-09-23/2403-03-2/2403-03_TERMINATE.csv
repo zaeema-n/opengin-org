@@ -4,28 +4,55 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2403-03-02_tr_03,Minister of Education,cabinetMinister,Achchige Don Susil Premajayanth,citizen,AS_APPOINTED,2024-09-23
 2403-03-02_tr_04,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Vanniarachchi Pavithra Devi,citizen,AS_APPOINTED,2024-09-23
 2403-03-02_tr_05,Minister of Urban Development and Housing,cabinetMinister,Prasanna Ranatunga,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_06,Minister of Environment,cabinetMinister,Keheliya Rambukwella,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_06,Minister of Environment,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
 2403-03-02_tr_07,Minister of Public Security,cabinetMinister,Tiran Alles,citizen,AS_APPOINTED,2024-09-23
 2403-03-02_tr_08,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Ranjith Siyambalapitiya,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_09,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_10,Minister of Investment Promotion,cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_11,Minister of Transport and Highways,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_12,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Wijayadasa Rajapaksha,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_13,Minister of Foreign Affairs,cabinetMinister,M U M Ali Sabri,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_14,Minister of Sports and Youth Affairs,cabinetMinister,Nalaka Jude Hareen Fernando,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_15,"Minister of Trade, Commerce and Food Security",cabinetMinister,Kachchakaduge Nalin Ruwanjiwa Fernando,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_16,Minister of Agriculture and Plantation Industries,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_17,Minister of Technology,cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_18,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_19,Minister of Mass Media,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_20,Minister of Tourism and Lands,cabinetMinister,Nalaka Jude Hareen Fernando,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_21,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Vidura Wickramanayaka,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_22,Minister of Irrigation,cabinetMinister,Vanniarachchi Pavithra Devi,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_23,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Jeevan Thondaman,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_24,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_25,Minister of Fisheries,cabinetMinister,Douglas Devananda,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_26,Minister of Health,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_27,Minister of Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_28,Minister of Power and Energy,cabinetMinister,Kanchana Wijesekera,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_29,Minister of Labour and Foreign Employment,cabinetMinister,Maligaspe Koralege Nalin Manusha Nanayakkara,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_30,Minister of Defence,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_09,Minister of Transport and Highways,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_10,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Ali Sabry,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_11,Minister of Foreign Affairs,cabinetMinister,Ali Sabri,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_12,Minister of Sports and Youth Affairs,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_13,"Minister of Trade, Commerce and Food Security",cabinetMinister,Kachchakaduge Nalin Ruwanjiwa Fernando,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_14,Minister of Agriculture and Plantation Industries,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_15,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_16,Minister of Mass Media,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_17,Minister of Tourism and Lands,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_18,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Vidura Wickramanayaka,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_19,Minister of Irrigation,cabinetMinister,Vanniarachchi Pavithra Devi,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_20,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Jeevan Thondaman,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_21,Minister of Fisheries,cabinetMinister,Douglas Devananda,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_22,Minister of Health,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_23,Minister of Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_24,Minister of Power and Energy,cabinetMinister,Kanchana Wijesekera,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_25,Minister of Labour and Foreign Employment,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_26,Minister of Defence,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_27,"State Minister of Health, Women and Child Affairs",stateMinister,Wijayapala Sri Narayana Wasala Bandaranayake Mohottalalage Seetha Kumari Arambepola,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_28,State Minister of Labour,stateMinister,Vadivelu Suresh,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_29,Non Cabinet Minister of Development Projects,stateMinister,Ali Zahir Moulana Seiyad,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_30,State Minister of Trade and Environment,stateMinister,Sathasivam Viyalendiran,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_31,"State Minister of Provincial Councils, Local Government and Environment",stateMinister,Janaka Wakkumbura,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_32,State Minister of Plantation Industries and Mahaweli Development,stateMinister,Lohan Ratwatte,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_33,State Minister of Social Empowerment,stateMinister,Anupa Pium Pasqual,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_34,State Minister of Primary Industries,stateMinister,Don Arthar Chamara Sampath Dasanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_35,State Minister of Tourism,stateMinister,Diana Gamage,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_36,State Minister of Higher Education,stateMinister,Surendra Ragawan,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_37,State Minister of Rural Road Development,stateMinister,Sivanesathurai Chandrakanthan,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_38,State Minister of Education,stateMinister,A. Aravind Kumar,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_39,State Minister of Home Affairs,stateMinister,Ashoka Priyantha,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_40,State Minister of Rural Economy,stateMinister,Khadar Khadar Masthan,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_41,State Minister of Livestock Development,stateMinister,D.B. Herath,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_42,State Minister of Fisheries,stateMinister,Piyal Nishantha De Silva,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_43,State Minister of Indigenous Medicine,stateMinister,Arachchilage Sisira Jayakody,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_44,State Minister of Justice and Prison Affairs,stateMinister,Anuradha Jayaratne,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_45,State Minister of Mass Media,stateMinister,Shantha Bandara,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_46,State Minister of Water Supply,stateMinister,Sanath Nishantha,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_47,State Minister of Foreign Affairs,stateMinister,Tharaka Balasuriya,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_48,State Minister of Piriven Education,stateMinister,Vijitha Berugoda,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_49,State Minister of Sports and Youth Affairs,stateMinister,Rohana Dissanayaka,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_50,State Minister of Defence,stateMinister,Thennakoon Pramitha Bandara,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_51,State Minister of Urban Development and Housing,stateMinister,Arundika Fernando,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_52,State Minister of Technology,stateMinister,Kanaka Herath,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_53,State Minister of Investment Promotion,stateMinister,Amunugama Dilum Suraj Bandara,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_54,State Minister of Transport,stateMinister,Lasantha Alagiyawanna,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_55,State Minister of Finance,stateMinister,Asanka Shehan Semasinghe,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_56,State Minister of Finance,stateMinister,Ranjith Siyambalapitiya,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_57,State Minister of Foreign Employment Promotion,stateMinister,A P Jagath Pushpakumara,citizen,AS_APPOINTED,2024-09-23

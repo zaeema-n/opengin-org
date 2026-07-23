@@ -1,103 +1,103 @@
 transaction_id,parent,parent_type,child,child_type,rel_type,date
-2403-38-01_tr_01,Minister of Agriculture and Plantation Industries,cabinetMinister,Agriculture and Agrarian Insurance Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_02,Minister of Agriculture and Plantation Industries,cabinetMinister,Ceylon Fertilizer Company Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_03,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Cultivation Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_04,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_05,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_06,Minister of Agriculture and Plantation Industries,cabinetMinister,Colombo Commercial Fertilizer Company,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_07,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Agrarian Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_08,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Agriculture,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_09,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Animal Production and Health,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_10,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Cinnamon Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_11,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Export Agriculture,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_12,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Rubber Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_13,Minister of Agriculture and Plantation Industries,cabinetMinister,Hector Kobbekaduwa Agrarian Research and Training Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_14,Minister of Agriculture and Plantation Industries,cabinetMinister,Institute of Post-Harvest Technology,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_15,Minister of Agriculture and Plantation Industries,cabinetMinister,Kapruka Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_16,Minister of Agriculture and Plantation Industries,cabinetMinister,Kithul Development Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_17,Minister of Agriculture and Plantation Industries,cabinetMinister,Mahaweli Livestock Enterprise Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_18,Minister of Agriculture and Plantation Industries,cabinetMinister,Milco (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_19,Minister of Agriculture and Plantation Industries,cabinetMinister,National Agricultural Diversification and Settlement Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_20,Minister of Agriculture and Plantation Industries,cabinetMinister,National Fertilizer Secretariat,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_21,Minister of Agriculture and Plantation Industries,cabinetMinister,National Hunger Eradication Campaign Board of Sri Lanka (National Food Promotion Board),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_22,Minister of Agriculture and Plantation Industries,cabinetMinister,National Institute of Plantation Management,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_23,Minister of Agriculture and Plantation Industries,cabinetMinister,National Livestock Development Board and affiliated companies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_24,Minister of Agriculture and Plantation Industries,cabinetMinister,Paddy Marketing Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_25,Minister of Agriculture and Plantation Industries,cabinetMinister,Palmyrah Development Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_26,Minister of Agriculture and Plantation Industries,cabinetMinister,Regional Economic Centres,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_27,Minister of Agriculture and Plantation Industries,cabinetMinister,Rubber Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_28,Minister of Agriculture and Plantation Industries,cabinetMinister,Spices and Allied Products Marketing Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_29,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Cashew Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_30,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Council for Agricultural Research Policy,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_31,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Rubber Manufacturing and Export Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_32,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Tea Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_33,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_34,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Shakthi Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_35,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Small Holdings Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_36,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea and Rubber Estates (Control and Fragmentation) Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_37,Minister of Agriculture and Plantation Industries,cabinetMinister,Thurusaviya Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_38,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Amaradeva Aesthetic and Research Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_39,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Buddhasasana Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_40,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Buddhist Renaissance Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_41,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Central Cultural Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_42,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Archaeology,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_43,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Buddhist Affairs,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_44,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Christian Religious Affairs,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_45,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_46,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Hindu Religious and Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_47,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Muslim Religious and Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_48,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of National Archives,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_49,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of National Museums,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_50,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Public Trustee,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_51,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Galle Heritage Foundation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_52,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Gramodaya Folk Arts Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_53,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,National Arts Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_54,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,National Performing Arts Theatre (Nelum Pokuna),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_55,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Tower Hall Theatre Foundation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_56,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,“Ape Gama”,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_57,Minister of Defence,cabinetMinister,Api Wenuwen Api Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_58,Minister of Defence,cabinetMinister,Civil Security Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_59,Minister of Defence,cabinetMinister,Coast Guard Department of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_60,Minister of Defence,cabinetMinister,Defence Research and Development Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_61,Minister of Defence,cabinetMinister,Defence Services Command and Staff College,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_62,Minister of Defence,cabinetMinister,Defence Services School,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_63,Minister of Defence,cabinetMinister,Department of Meteorology,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_64,Minister of Defence,cabinetMinister,Disaster Management Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_65,Minister of Defence,cabinetMinister,Institute of National Security Studies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_66,Minister of Defence,cabinetMinister,Miloda Institute - as a Faculty of Kotelawala Defence University,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_67,Minister of Defence,cabinetMinister,National Authority for the Implementation of Chemical Weapons Convention,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_68,Minister of Defence,cabinetMinister,National Building Research Organization,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_69,Minister of Defence,cabinetMinister,National Cadet Corps,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_70,Minister of Defence,cabinetMinister,National Defence College,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_71,Minister of Defence,cabinetMinister,National Defence Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_72,Minister of Defence,cabinetMinister,National Disaster Management Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_73,Minister of Defence,cabinetMinister,National Disaster Relief Services Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_74,Minister of Defence,cabinetMinister,Office of the Chief of Defence Staff,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_75,Minister of Defence,cabinetMinister,Rakna Arakshana Lanka Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_76,Minister of Defence,cabinetMinister,Ranaviru Seva Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_77,Minister of Defence,cabinetMinister,Sir John Kotelawala Defence University,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_78,Minister of Defence,cabinetMinister,Sri Lanka Air Force,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_79,Minister of Defence,cabinetMinister,Sri Lanka Army,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_80,Minister of Defence,cabinetMinister,Sri Lanka Navy,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_81,Minister of Defence,cabinetMinister,State Intelligence Service,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_82,Minister of Education,cabinetMinister,Arthur C. Clarke Institute for Modern Technologies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_83,Minister of Education,cabinetMinister,Ceylon German Technical Training Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_84,Minister of Education,cabinetMinister,Department of Educational Publications,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_85,Minister of Education,cabinetMinister,Department of Examinations,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_86,Minister of Education,cabinetMinister,Department of Technical Education and Training,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_87,Minister of Education,cabinetMinister,Directorates of Education,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_88,Minister of Education,cabinetMinister,National Apprenticeship and Industrial Training Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_89,Minister of Education,cabinetMinister,National Colleges of Education,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_90,Minister of Education,cabinetMinister,National Education Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_91,Minister of Education,cabinetMinister,National Engineering Research And Development Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_92,Minister of Education,cabinetMinister,National Innovation Agency,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_93,Minister of Education,cabinetMinister,National Institute of Business Management and affiliated institutions,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_94,Minister of Education,cabinetMinister,National Institute of Education,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_95,Minister of Education,cabinetMinister,National Institute of Fisheries and Nautical Engineering (Ocean University),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_96,Minister of Education,cabinetMinister,National Institute of Fundamental Studies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_97,Minister of Education,cabinetMinister,National Library and Documentation Services Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_98,Minister of Education,cabinetMinister,National Research Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_99,Minister of Education,cabinetMinister,National Science Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_001,Minister of Agriculture and Plantation Industries,cabinetMinister,Agriculture and Agrarian Insurance Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_002,Minister of Agriculture and Plantation Industries,cabinetMinister,Ceylon Fertilizer Company Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_003,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Cultivation Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_004,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_005,Minister of Agriculture and Plantation Industries,cabinetMinister,Coconut Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_006,Minister of Agriculture and Plantation Industries,cabinetMinister,Colombo Commercial Fertilizer Company,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_007,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Agrarian Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_008,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Agriculture,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_009,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Animal Production and Health,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_010,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Cinnamon Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_011,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Export Agriculture,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_012,Minister of Agriculture and Plantation Industries,cabinetMinister,Department of Rubber Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_013,Minister of Agriculture and Plantation Industries,cabinetMinister,Hector Kobbekaduwa Agrarian Research and Training Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_014,Minister of Agriculture and Plantation Industries,cabinetMinister,Institute of Post-Harvest Technology,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_015,Minister of Agriculture and Plantation Industries,cabinetMinister,Kapruka Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_016,Minister of Agriculture and Plantation Industries,cabinetMinister,Kithul Development Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_017,Minister of Agriculture and Plantation Industries,cabinetMinister,Mahaweli Livestock Enterprise Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_018,Minister of Agriculture and Plantation Industries,cabinetMinister,Milco (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_019,Minister of Agriculture and Plantation Industries,cabinetMinister,National Agricultural Diversification and Settlement Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_020,Minister of Agriculture and Plantation Industries,cabinetMinister,National Fertilizer Secretariat,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_021,Minister of Agriculture and Plantation Industries,cabinetMinister,National Hunger Eradication Campaign Board of Sri Lanka (National Food Promotion Board),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_022,Minister of Agriculture and Plantation Industries,cabinetMinister,National Institute of Plantation Management,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_023,Minister of Agriculture and Plantation Industries,cabinetMinister,National Livestock Development Board and affiliated companies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_024,Minister of Agriculture and Plantation Industries,cabinetMinister,Paddy Marketing Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_025,Minister of Agriculture and Plantation Industries,cabinetMinister,Palmyrah Development Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_026,Minister of Agriculture and Plantation Industries,cabinetMinister,Regional Economic Centres,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_027,Minister of Agriculture and Plantation Industries,cabinetMinister,Rubber Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_028,Minister of Agriculture and Plantation Industries,cabinetMinister,Spices and Allied Products Marketing Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_029,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Cashew Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_030,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Council for Agricultural Research Policy,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_031,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Rubber Manufacturing and Export Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_032,Minister of Agriculture and Plantation Industries,cabinetMinister,Sri Lanka Tea Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_033,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_034,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Shakthi Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_035,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea Small Holdings Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_036,Minister of Agriculture and Plantation Industries,cabinetMinister,Tea and Rubber Estates (Control and Fragmentation) Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_037,Minister of Agriculture and Plantation Industries,cabinetMinister,Thurusaviya Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_038,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Amaradeva Aesthetic and Research Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_039,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Buddhasasana Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_040,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Buddhist Renaissance Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_041,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Central Cultural Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_042,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Archaeology,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_043,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Buddhist Affairs,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_044,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Christian Religious Affairs,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_045,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_046,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Hindu Religious and Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_047,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Muslim Religious and Cultural Affairs,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_048,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of National Archives,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_049,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of National Museums,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_050,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Department of Public Trustee,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_051,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Galle Heritage Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_052,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Gramodaya Folk Arts Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_053,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,National Arts Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_054,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,National Performing Arts Theatre (Nelum Pokuna),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_055,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Tower Hall Theatre Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_056,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,“Ape Gama”,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_057,Minister of Defence,cabinetMinister,Api Wenuwen Api Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_058,Minister of Defence,cabinetMinister,Civil Security Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_059,Minister of Defence,cabinetMinister,Coast Guard Department of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_060,Minister of Defence,cabinetMinister,Defence Research and Development Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_061,Minister of Defence,cabinetMinister,Defence Services Command and Staff College,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_062,Minister of Defence,cabinetMinister,Defence Services School,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_063,Minister of Defence,cabinetMinister,Department of Meteorology,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_064,Minister of Defence,cabinetMinister,Disaster Management Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_065,Minister of Defence,cabinetMinister,Institute of National Security Studies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_066,Minister of Defence,cabinetMinister,Miloda Institute - as a Faculty of Kotelawala Defence University,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_067,Minister of Defence,cabinetMinister,National Authority for the Implementation of Chemical Weapons Convention,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_068,Minister of Defence,cabinetMinister,National Building Research Organization,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_069,Minister of Defence,cabinetMinister,National Cadet Corps,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_070,Minister of Defence,cabinetMinister,National Defence College,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_071,Minister of Defence,cabinetMinister,National Defence Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_072,Minister of Defence,cabinetMinister,National Disaster Management Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_073,Minister of Defence,cabinetMinister,National Disaster Relief Services Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_074,Minister of Defence,cabinetMinister,Office of the Chief of Defence Staff,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_075,Minister of Defence,cabinetMinister,Rakna Arakshana Lanka Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_076,Minister of Defence,cabinetMinister,Ranaviru Seva Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_077,Minister of Defence,cabinetMinister,Sir John Kotelawala Defence University,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_078,Minister of Defence,cabinetMinister,Sri Lanka Air Force,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_079,Minister of Defence,cabinetMinister,Sri Lanka Army,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_080,Minister of Defence,cabinetMinister,Sri Lanka Navy,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_081,Minister of Defence,cabinetMinister,State Intelligence Service,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_082,Minister of Education,cabinetMinister,Arthur C. Clarke Institute for Modern Technologies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_083,Minister of Education,cabinetMinister,Ceylon German Technical Training Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_084,Minister of Education,cabinetMinister,Department of Educational Publications,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_085,Minister of Education,cabinetMinister,Department of Examinations,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_086,Minister of Education,cabinetMinister,Department of Technical Education and Training,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_087,Minister of Education,cabinetMinister,Directorates of Education,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_088,Minister of Education,cabinetMinister,National Apprenticeship and Industrial Training Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_089,Minister of Education,cabinetMinister,National Colleges of Education,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_090,Minister of Education,cabinetMinister,National Education Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_091,Minister of Education,cabinetMinister,National Engineering Research And Development Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_092,Minister of Education,cabinetMinister,National Innovation Agency,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_093,Minister of Education,cabinetMinister,National Institute of Business Management and affiliated institutions,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_094,Minister of Education,cabinetMinister,National Institute of Education,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_095,Minister of Education,cabinetMinister,National Institute of Fisheries and Nautical Engineering (Ocean University),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_096,Minister of Education,cabinetMinister,National Institute of Fundamental Studies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_097,Minister of Education,cabinetMinister,National Library and Documentation Services Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_098,Minister of Education,cabinetMinister,National Research Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_099,Minister of Education,cabinetMinister,National Science Foundation,department,AS_DEPARTMENT,2024-09-25
 2403-38-01_tr_100,Minister of Education,cabinetMinister,National Science and Technology Commission,department,AS_DEPARTMENT,2024-09-25
 2403-38-01_tr_101,Minister of Education,cabinetMinister,Piriven Education Board,department,AS_DEPARTMENT,2024-09-25
 2403-38-01_tr_102,Minister of Education,cabinetMinister,Planetarium of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
@@ -184,299 +184,339 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2403-38-01_tr_183,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Tax Appeals Commission,department,AS_DEPARTMENT,2024-09-25
 2403-38-01_tr_184,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Welfare Benefits Board,department,AS_DEPARTMENT,2024-09-25
 2403-38-01_tr_185,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Wildlife Trust,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_186,Minister of Fisheries,cabinetMinister,Cey-Nor Foundation Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_187,Minister of Fisheries,cabinetMinister,Ceylon Fisheries Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_188,Minister of Fisheries,cabinetMinister,Ceylon Fishery Harbours Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_189,Minister of Fisheries,cabinetMinister,Department of Fisheries and Aquatic Resources,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_190,Minister of Fisheries,cabinetMinister,National Aquaculture Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_191,Minister of Fisheries,cabinetMinister,National Aquatic Resources Research and Development Agency,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_192,Minister of Foreign Affairs,cabinetMinister,Diplomatic Missions in abroad,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_193,Minister of Foreign Affairs,cabinetMinister,Lakshman Kadirgamar Institute for International Relations and Strategic Studies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_194,Minister of Foreign Affairs,cabinetMinister,National Oceanic Affairs Committee Secretariat,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_195,Minister of Health,cabinetMinister,1990 Suwaseriya Foundation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_196,Minister of Health,cabinetMinister,"All National, Teaching and Specific Government Hospitals",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_197,Minister of Health,cabinetMinister,Ashraff Memorial Hospital,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_198,Minister of Health,cabinetMinister,Ayurveda Teaching and Research Hospitals,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_199,Minister of Health,cabinetMinister,Ayurvedic College and Hospital Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_200,Minister of Health,cabinetMinister,Ayurvedic Medical Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_201,Minister of Health,cabinetMinister,Department of Ayurveda,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_202,Minister of Health,cabinetMinister,Department of Health Services,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_203,Minister of Health,cabinetMinister,"Homeopathy Hospital, Welisara",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_204,Minister of Health,cabinetMinister,Homeopathy Medical Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_205,Minister of Health,cabinetMinister,Kidney Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_206,Minister of Health,cabinetMinister,Medical Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_207,Minister of Health,cabinetMinister,National Authority on Tobacco and Alcohol,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_208,Minister of Health,cabinetMinister,National Health Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_209,Minister of Health,cabinetMinister,National Health Development Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_210,Minister of Health,cabinetMinister,National Institute of Health Sciences,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_211,Minister of Health,cabinetMinister,"National Institute of Nephrology, Dialysis and Transplantation",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_212,Minister of Health,cabinetMinister,National Medicines Regulatory Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_213,Minister of Health,cabinetMinister,Private Health Services Regulatory Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_214,Minister of Health,cabinetMinister,School of Medical Laboratory Technology,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_215,Minister of Health,cabinetMinister,Sri Jayewardenepura General Hospital,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_216,Minister of Health,cabinetMinister,Sri Lanka Ayurvedic Drugs Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_217,Minister of Health,cabinetMinister,Sri Lanka Medical College Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_218,Minister of Health,cabinetMinister,Sri Lanka Medical Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_219,Minister of Health,cabinetMinister,State Pharmaceutical Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_220,Minister of Health,cabinetMinister,State Pharmaceutical Manufacturing Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_221,Minister of Health,cabinetMinister,Vijaya Kumaratunga Memorial Hospital,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_222,Minister of Industries,cabinetMinister,Ceylon Ceramics Corporation (Brick and Tiles Division),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_223,Minister of Industries,cabinetMinister,Ceylon Industrial Development Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_224,Minister of Industries,cabinetMinister,Department of Textile Industries,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_225,Minister of Industries,cabinetMinister,Department of the Registrar of Companies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_226,Minister of Industries,cabinetMinister,Gem and Jewellery Research and Training Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_227,Minister of Industries,cabinetMinister,Industrial Technology Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_228,Minister of Industries,cabinetMinister,Kahagolla Engineering Services Company Ltd. (KESCO),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_229,Minister of Industries,cabinetMinister,Kahatagaha Graphite Lanka Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_230,Minister of Industries,cabinetMinister,Lanka Ashok Leyland Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_231,Minister of Industries,cabinetMinister,Lanka Cement Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_232,Minister of Industries,cabinetMinister,Lanka Leyland Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_233,Minister of Industries,cabinetMinister,Lanka Mineral Sands Company,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_234,Minister of Industries,cabinetMinister,Lanka Phosphate Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_235,Minister of Industries,cabinetMinister,Lanka Salusala Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_236,Minister of Industries,cabinetMinister,Lanka Textile Mills Emporium Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_237,Minister of Industries,cabinetMinister,National Crafts Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_238,Minister of Industries,cabinetMinister,National Design Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_239,Minister of Industries,cabinetMinister,National Enterprise Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_240,Minister of Industries,cabinetMinister,National Gem and Jewellery Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_241,Minister of Industries,cabinetMinister,National Paper Corporation Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_242,Minister of Industries,cabinetMinister,SME Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_243,Minister of Industries,cabinetMinister,SME Venture Capital Company,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_244,Minister of Industries,cabinetMinister,Sri Lanka Handicraft Board (Laksala),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_245,Minister of Industries,cabinetMinister,Sri Lanka Institute of Textile and Apparels,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_246,Minister of Industries,cabinetMinister,Timber-related Design Centre,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_247,Minister of Industries,cabinetMinister,Vidatha Centres,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_248,Minister of Investment Promotion,cabinetMinister,Board of Investment of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_249,Minister of Investment Promotion,cabinetMinister,Ceylon Sugar (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_250,Minister of Investment Promotion,cabinetMinister,Colombo Port City Economic Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_251,Minister of Investment Promotion,cabinetMinister,Hingurana Sugar Industry Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_252,Minister of Investment Promotion,cabinetMinister,Information Technology Parks,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_253,Minister of Investment Promotion,cabinetMinister,Kantale Sugar Company Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_254,Minister of Investment Promotion,cabinetMinister,Sri Lanka Export Development Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_255,Minister of Investment Promotion,cabinetMinister,Sugar Cane Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_256,Minister of Investment Promotion,cabinetMinister,Techno Park Development Company (Pvt.) Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_257,Minister of Irrigation,cabinetMinister,Central Engineering Consultancy Bureau and its subsidiaries and affiliated companies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_258,Minister of Irrigation,cabinetMinister,Department of Irrigation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_259,Minister of Irrigation,cabinetMinister,Engineering Council of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_260,Minister of Irrigation,cabinetMinister,"Major irrigation development projects including Uma Oya, Moragahakanda, Kalu Ganga, Gin Ganga, Nilwala, Malwathu Oya",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_261,Minister of Irrigation,cabinetMinister,Sri Lanka Mahaweli Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_262,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Attorney General's Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_263,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Commercial Mediation Centre of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_264,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Community Based Correction Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_265,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Council of Legal Education,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_266,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Debt Conciliation Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_267,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Government Analyst,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_268,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Prisons,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_269,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Law Commission of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_270,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Legal Aid Commission of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_271,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Legal Draftsman's Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_272,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Mediation Boards Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_273,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,National Authority for the Protection of Victims of Crime and Witnesses,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_274,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office for National Unity and Reconciliation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_275,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office for Reparations,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_276,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office of Missing Persons,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_277,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office of the Registrar of the Supreme Court,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_278,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Rehabilitation Commissioner General's Office,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_279,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Sri Lanka International Arbitration Centre (Guarantee) Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_280,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Superior Courts Complex Board of Management,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_281,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Training Schools for Youthful Offenders,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_282,Minister of Labour and Foreign Employment,cabinetMinister,Department of Labour,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_283,Minister of Labour and Foreign Employment,cabinetMinister,Department of Manpower and Employment,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_284,Minister of Labour and Foreign Employment,cabinetMinister,Foreign Employment Agency of Sri Lanka (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_285,Minister of Labour and Foreign Employment,cabinetMinister,National Institute for Occupational Safety and Health,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_286,Minister of Labour and Foreign Employment,cabinetMinister,National Institute of Labour Studies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_287,Minister of Labour and Foreign Employment,cabinetMinister,National Productivity Secretariat,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_288,Minister of Labour and Foreign Employment,cabinetMinister,Office of the Commissioner of Workmen's Compensation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_289,Minister of Labour and Foreign Employment,cabinetMinister,Shrama Vasana Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_290,Minister of Labour and Foreign Employment,cabinetMinister,Sri Lanka Foreign Employment Bureau,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_291,Minister of Mass Media,cabinetMinister,Associated Newspapers of Ceylon Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_292,Minister of Mass Media,cabinetMinister,Department of Government Information,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_293,Minister of Mass Media,cabinetMinister,Department of Government Printing,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_294,Minister of Mass Media,cabinetMinister,Independent Television Network,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_295,Minister of Mass Media,cabinetMinister,Lanka Puwath Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_296,Minister of Mass Media,cabinetMinister,National Film Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_297,Minister of Mass Media,cabinetMinister,Postal Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_298,Minister of Mass Media,cabinetMinister,Public Performance Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_299,Minister of Mass Media,cabinetMinister,Right to Information Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_300,Minister of Mass Media,cabinetMinister,Selacine Media Solutions (PVT) LTD,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_301,Minister of Mass Media,cabinetMinister,Selacine Rupavahini Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_302,Minister of Mass Media,cabinetMinister,Sri Lanka Broadcasting Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_303,Minister of Mass Media,cabinetMinister,Sri Lanka Foundation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_304,Minister of Mass Media,cabinetMinister,Sri Lanka Institute of Printing,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_305,Minister of Mass Media,cabinetMinister,Sri Lanka Press Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_306,Minister of Mass Media,cabinetMinister,Sri Lanka Rupavahini Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_307,"Minister of Ports, Shipping and Aviation",cabinetMinister,Airport and Aviation Services (Sri Lanka) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_308,"Minister of Ports, Shipping and Aviation",cabinetMinister,Ceylon Shipping Corporation Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_309,"Minister of Ports, Shipping and Aviation",cabinetMinister,Civil Aviation Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_310,"Minister of Ports, Shipping and Aviation",cabinetMinister,Merchant Shipping Secretariat,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_311,"Minister of Ports, Shipping and Aviation",cabinetMinister,Sri Lanka Ports Authority and its Subsidiaries and Associates,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_312,"Minister of Ports, Shipping and Aviation",cabinetMinister,Sri Lankan Air Lines Limited and its subsidiaries,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_313,Minister of Power and Energy,cabinetMinister,Ceylon Electricity Board and its subsidiary Companies,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_314,Minister of Power and Energy,cabinetMinister,Ceylon Electricity Company,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_315,Minister of Power and Energy,cabinetMinister,Ceylon Petroleum Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_316,Minister of Power and Energy,cabinetMinister,Ceylon Petroleum Storage Terminal Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_317,Minister of Power and Energy,cabinetMinister,LTL Holdings (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_318,Minister of Power and Energy,cabinetMinister,Lanka Coal Company (Pvt) Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_319,Minister of Power and Energy,cabinetMinister,Petroleum Development Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_320,Minister of Power and Energy,cabinetMinister,Polipto Lanka (Pvt) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_321,Minister of Power and Energy,cabinetMinister,Sri Lanka Atomic Energy Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_322,Minister of Power and Energy,cabinetMinister,Sri Lanka Atomic Energy Regulatory Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_323,Minister of Power and Energy,cabinetMinister,Sri Lanka Sustainable Energy Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_324,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,All District Secretariats and Divisional Secretariats,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_325,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Multi-purpose Development Task Force,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_326,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Official Languages,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_327,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Pensions,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_328,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Registrar General,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_329,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Distance Learning Centre Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_330,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Service Pension Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_331,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Widowers' and Orphans' Pension Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_332,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Widows' and Orphans' Pension Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_333,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Loans and Development Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_334,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,National Human Resources Development Council of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_335,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,National Institute of Language Education and Training,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_336,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Official Languages Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_337,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Public Service Pensioners' Trust Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_338,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Sri Lanka Institute of Development Administration,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_339,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Sri Lanka Institute of Local Government,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_340,Minister of Public Security,cabinetMinister,Department of Immigration and Emigration,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_341,Minister of Public Security,cabinetMinister,Department of Registration of Persons,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_342,Minister of Public Security,cabinetMinister,National Dangerous Drugs Control Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_343,Minister of Public Security,cabinetMinister,National Police Academy,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_344,Minister of Public Security,cabinetMinister,Secretariat for Non-Governmental Organizations,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_345,Minister of Public Security,cabinetMinister,Sri Lanka Police,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_346,Minister of Sports and Youth Affairs,cabinetMinister,Department of Sports Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_347,Minister of Sports and Youth Affairs,cabinetMinister,National Centre for Leadership Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_348,Minister of Sports and Youth Affairs,cabinetMinister,National Sports Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_349,Minister of Sports and Youth Affairs,cabinetMinister,National Youth Corps,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_350,Minister of Sports and Youth Affairs,cabinetMinister,National Youth Services Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_351,Minister of Sports and Youth Affairs,cabinetMinister,National Youths Services Cooperative Society Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_352,Minister of Sports and Youth Affairs,cabinetMinister,Sugathadasa National Sports Complex Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_353,Minister of Technology,cabinetMinister,Centre of Excellence for Robotic Applications,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_354,Minister of Technology,cabinetMinister,Data Protection Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_355,Minister of Technology,cabinetMinister,Information and Communication Technology Agency and Allied Institutions,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_356,Minister of Technology,cabinetMinister,Sri Lanka Computer Emergency Readiness Team,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_357,Minister of Technology,cabinetMinister,Sri Lanka Standards Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_358,Minister of Technology,cabinetMinister,Telecommunication Regulatory Commission of Sri Lanka and Allied Institutions,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_359,Minister of Tourism and Lands,cabinetMinister,Department of Land Commissioner General,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_360,Minister of Tourism and Lands,cabinetMinister,Department of Land Settlement,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_361,Minister of Tourism and Lands,cabinetMinister,Department of Land Use Policy Planning,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_362,Minister of Tourism and Lands,cabinetMinister,Department of National Botanic Gardens,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_363,Minister of Tourism and Lands,cabinetMinister,Institute of Surveying and Mapping,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_364,Minister of Tourism and Lands,cabinetMinister,Land Acquisition Board of Review,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_365,Minister of Tourism and Lands,cabinetMinister,Land Reform Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_366,Minister of Tourism and Lands,cabinetMinister,Land Survey Council,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_367,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Convention Bureau,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_368,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Institute of Tourism and Hotel Management,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_369,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Survey Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_370,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Tourism Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_371,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Tourism Promotion Bureau,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_372,"Minister of Trade, Commerce and Food Security",cabinetMinister,Consumer Affairs Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_373,"Minister of Trade, Commerce and Food Security",cabinetMinister,Cooperative Employees Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_374,"Minister of Trade, Commerce and Food Security",cabinetMinister,Cooperative Wholesale Establishment,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_375,"Minister of Trade, Commerce and Food Security",cabinetMinister,Department of Commerce,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_376,"Minister of Trade, Commerce and Food Security",cabinetMinister,Department of Cooperative Development (Registrar of Cooperative Societies),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_377,"Minister of Trade, Commerce and Food Security",cabinetMinister,"Department of Measurement Units, Standards and Services",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_378,"Minister of Trade, Commerce and Food Security",cabinetMinister,Food Commissioner's Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_379,"Minister of Trade, Commerce and Food Security",cabinetMinister,Lanka Sathosa Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_380,"Minister of Trade, Commerce and Food Security",cabinetMinister,Mahapola Trust Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_381,"Minister of Trade, Commerce and Food Security",cabinetMinister,National Institute of Cooperative Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_382,"Minister of Trade, Commerce and Food Security",cabinetMinister,National Intellectual Property Office of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_383,"Minister of Trade, Commerce and Food Security",cabinetMinister,Sri Lanka Accreditation Board for Conformity Assessment,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_384,Minister of Transport and Highways,cabinetMinister,Department of Motor Traffic,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_385,Minister of Transport and Highways,cabinetMinister,Department of Sri Lanka Railways,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_386,Minister of Transport and Highways,cabinetMinister,Lakdiva Engineering Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_387,Minister of Transport and Highways,cabinetMinister,Maga Neguma,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_388,Minister of Transport and Highways,cabinetMinister,National Council for Road Safety,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_389,Minister of Transport and Highways,cabinetMinister,National Transport Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_390,Minister of Transport and Highways,cabinetMinister,National Transport Medical Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_391,Minister of Transport and Highways,cabinetMinister,Road Development Authority and its subsidiaries and affiliates,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_392,Minister of Transport and Highways,cabinetMinister,Sri Lanka Transport Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_393,Minister of Transport and Highways,cabinetMinister,State Development and Construction Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_394,Minister of Urban Development and Housing,cabinetMinister,Building Material Corporation Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_395,Minister of Urban Development and Housing,cabinetMinister,Condominium Management Authority (Common Amenities Board),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_396,Minister of Urban Development and Housing,cabinetMinister,Construction Industry Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_397,Minister of Urban Development and Housing,cabinetMinister,Department of Buildings,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_398,Minister of Urban Development and Housing,cabinetMinister,Department of Coast Conservation and Coastal Resource Management,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_399,Minister of Urban Development and Housing,cabinetMinister,Department of Government Factories,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_400,Minister of Urban Development and Housing,cabinetMinister,Hotel Developers (Lanka) PLC (PQ 143),department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_401,Minister of Urban Development and Housing,cabinetMinister,Marine Environment Protection Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_402,Minister of Urban Development and Housing,cabinetMinister,National Housing Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_403,Minister of Urban Development and Housing,cabinetMinister,National Physical Planning Department,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_404,Minister of Urban Development and Housing,cabinetMinister,Ocean View Development (Pvt) Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_405,Minister of Urban Development and Housing,cabinetMinister,Selendiva Investments Limited,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_406,Minister of Urban Development and Housing,cabinetMinister,Sri Lanka Land Development Corporation and its subsidiaries and related institutions,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_407,Minister of Urban Development and Housing,cabinetMinister,Urban Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_408,Minister of Urban Development and Housing,cabinetMinister,Urban Settlement Development Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_409,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Department of National Community Water Supply,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_410,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Estate Sector Self-Employment Revolving Fund,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_411,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,National Water Supply and Drainage Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_412,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,New Villages Development Authority for Plantation Region,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_413,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Plantation Human Development Trust,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_414,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Saumyamoorthi Thondaman Memorial Foundation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_415,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Water Resources Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_416,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of Forest Conservation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_417,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of National Zoological Gardens,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_418,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of Wildlife Conservation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_419,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,State Timber Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_420,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Probation and Childcare Services,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_421,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Samurdhi Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_422,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Social Services,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_423,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Child Protection Authority,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_424,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Committee on Women,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_425,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Council for Elders and National Secretariat for Elders,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_426,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Council for Persons with Disabilities,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_427,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Institute of Social Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_428,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Secretariat for Early Childhood Development,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_429,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Secretariat for Persons with Disabilities,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_430,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Rural Development Training and Research Institute,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_431,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Saubhagya Development Bureau,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_432,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Social Security Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_433,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Sri Lanka Women's Bureau,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_434,Non Cabinet Minister of Development Projects,stateMinister,Department of Information Technology Management,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_435,Non Cabinet Minister of Development Projects,stateMinister,Department of Project Management and Monitoring,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_436,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Chilaw Plantation Company Ltd,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_437,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Elkaduwa Plantation Company Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_438,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Janatha Estate Development Board,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_439,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Kalubovitiyana Tea Factory Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_440,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Kurunegala Plantation Company Ltd.,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_441,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Sri Lanka State Plantation Corporation,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_442,State Minister of Higher Education,stateMinister,"All State Universities, Postgraduate Institutions and other Institutions under the purview of University Grants Commission",department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_443,State Minister of Higher Education,stateMinister,Buddhasravaka Bhikku University,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_444,State Minister of Higher Education,stateMinister,Buddhist and Pali University of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_445,State Minister of Higher Education,stateMinister,Sri Lanka Institute of Advanced Technological Education,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_446,State Minister of Higher Education,stateMinister,University Grants Commission,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_447,State Minister of Sports and Youth Affairs,stateMinister,Institute of Sports Medicine,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_448,State Minister of Sports and Youth Affairs,stateMinister,National Institute of Sports Science,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_449,State Minister of Sports and Youth Affairs,stateMinister,Sri Lanka Anti-doping Agency,department,AS_DEPARTMENT,2024-09-25
-2403-38-01_tr_450,Anura Kumara Dissanayake,citizen,Minister of Defence,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_451,Anura Kumara Dissanayake,citizen,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_452,Anura Kumara Dissanayake,citizen,Minister of Technology,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_453,Anura Kumara Dissanayake,citizen,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_454,Anura Kumara Dissanayake,citizen,"Minister of Ports, Shipping and Aviation",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_455,Anura Kumara Dissanayake,citizen,Minister of Investment Promotion,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_456,Anura Kumara Dissanayake,citizen,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_457,Anura Kumara Dissanayake,citizen,Minister of Fisheries,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_458,Anura Kumara Dissanayake,citizen,Minister of Education,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_459,Anura Kumara Dissanayake,citizen,Minister of Transport and Highways,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_460,Anura Kumara Dissanayake,citizen,Minister of Mass Media,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_461,Anura Kumara Dissanayake,citizen,Minister of Health,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_462,Anura Kumara Dissanayake,citizen,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_463,Anura Kumara Dissanayake,citizen,Minister of Agriculture and Plantation Industries,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_464,Anura Kumara Dissanayake,citizen,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_465,Anura Kumara Dissanayake,citizen,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_466,Anura Kumara Dissanayake,citizen,Minister of Tourism and Lands,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_467,Anura Kumara Dissanayake,citizen,Minister of Industries,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_468,Anura Kumara Dissanayake,citizen,Minister of Urban Development and Housing,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_469,Anura Kumara Dissanayake,citizen,Minister of Foreign Affairs,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_470,Anura Kumara Dissanayake,citizen,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_471,Anura Kumara Dissanayake,citizen,Minister of Power and Energy,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_472,Anura Kumara Dissanayake,citizen,Minister of Environment,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_473,Anura Kumara Dissanayake,citizen,Minister of Sports and Youth Affairs,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_474,Anura Kumara Dissanayake,citizen,Minister of Irrigation,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_475,Anura Kumara Dissanayake,citizen,Minister of Labour and Foreign Employment,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_476,Anura Kumara Dissanayake,citizen,Minister of Public Security,cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_477,Anura Kumara Dissanayake,citizen,"Minister of Trade, Commerce and Food Security",cabinetMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_478,Anura Kumara Dissanayake,citizen,State Minister of Higher Education,stateMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_479,Anura Kumara Dissanayake,citizen,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_480,Anura Kumara Dissanayake,citizen,State Minister of Sports and Youth Affairs,stateMinister,AS_MINISTER,2024-09-25
-2403-38-01_tr_481,Anura Kumara Dissanayake,citizen,Non Cabinet Minister of Development Projects,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_186,Minister of Fisheries,cabinetMinister,Ceylon Fishery Harbours Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_187,Minister of Fisheries,cabinetMinister,Department of Fisheries and Aquatic Resources,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_188,Minister of Fisheries,cabinetMinister,National Aquaculture Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_189,Minister of Foreign Affairs,cabinetMinister,Diplomatic Missions in abroad,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_190,Minister of Foreign Affairs,cabinetMinister,Lakshman Kadirgamar Institute for International Relations and Strategic Studies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_191,Minister of Foreign Affairs,cabinetMinister,National Oceanic Affairs Committee Secretariat,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_192,Minister of Health,cabinetMinister,"All National, Teaching and Specific Government Hospitals",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_193,Minister of Health,cabinetMinister,Ashraff Memorial Hospital,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_194,Minister of Health,cabinetMinister,Department of Health Services,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_195,Minister of Health,cabinetMinister,Kidney Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_196,Minister of Health,cabinetMinister,Medical Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_197,Minister of Health,cabinetMinister,National Health Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_198,Minister of Health,cabinetMinister,National Health Development Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_199,Minister of Health,cabinetMinister,National Institute of Health Sciences,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_200,Minister of Health,cabinetMinister,"National Institute of Nephrology, Dialysis and Transplantation",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_201,Minister of Health,cabinetMinister,National Medicines Regulatory Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_202,Minister of Health,cabinetMinister,Sri Lanka Medical College Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_203,Minister of Health,cabinetMinister,Sri Lanka Medical Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_204,Minister of Health,cabinetMinister,State Pharmaceutical Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_205,Minister of Health,cabinetMinister,State Pharmaceutical Manufacturing Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_206,Minister of Industries,cabinetMinister,Ceylon Industrial Development Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_207,Minister of Industries,cabinetMinister,Department of the Registrar of Companies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_208,Minister of Industries,cabinetMinister,Industrial Technology Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_209,Minister of Industries,cabinetMinister,Lanka Mineral Sands Company,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_210,Minister of Industries,cabinetMinister,Lanka Salusala Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_211,Minister of Industries,cabinetMinister,Vidatha Centres,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_212,Minister of Investment Promotion,cabinetMinister,Board of Investment of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_213,Minister of Investment Promotion,cabinetMinister,Ceylon Sugar (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_214,Minister of Investment Promotion,cabinetMinister,Colombo Port City Economic Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_215,Minister of Investment Promotion,cabinetMinister,Hingurana Sugar Industry Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_216,Minister of Investment Promotion,cabinetMinister,Information Technology Parks,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_217,Minister of Investment Promotion,cabinetMinister,Kantale Sugar Company Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_218,Minister of Investment Promotion,cabinetMinister,Sri Lanka Export Development Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_219,Minister of Investment Promotion,cabinetMinister,Sugar Cane Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_220,Minister of Investment Promotion,cabinetMinister,Techno Park Development Company (Pvt.) Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_221,Minister of Irrigation,cabinetMinister,Central Engineering Consultancy Bureau and its subsidiaries and affiliated companies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_222,Minister of Irrigation,cabinetMinister,Department of Irrigation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_223,Minister of Irrigation,cabinetMinister,Engineering Council of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_224,Minister of Irrigation,cabinetMinister,"Major irrigation development projects including Uma Oya, Moragahakanda, Kalu Ganga, Gin Ganga, Nilwala, Malwathu Oya",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_225,Minister of Irrigation,cabinetMinister,Sri Lanka Mahaweli Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_226,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Attorney General's Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_227,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Commercial Mediation Centre of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_228,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Community Based Correction Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_229,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Council of Legal Education,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_230,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Debt Conciliation Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_231,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Government Analyst,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_232,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Department of Prisons,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_233,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Law Commission of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_234,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Legal Aid Commission of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_235,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Legal Draftsman's Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_236,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Mediation Boards Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_237,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,National Authority for the Protection of Victims of Crime and Witnesses,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_238,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office for National Unity and Reconciliation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_239,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office for Reparations,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_240,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office of Missing Persons,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_241,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Office of the Registrar of the Supreme Court,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_242,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Rehabilitation Commissioner General's Office,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_243,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Sri Lanka International Arbitration Centre (Guarantee) Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_244,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Superior Courts Complex Board of Management,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_245,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Training Schools for Youthful Offenders,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_246,Minister of Labour and Foreign Employment,cabinetMinister,Department of Labour,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_247,Minister of Labour and Foreign Employment,cabinetMinister,Department of Manpower and Employment,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_248,Minister of Labour and Foreign Employment,cabinetMinister,Foreign Employment Agency of Sri Lanka (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_249,Minister of Labour and Foreign Employment,cabinetMinister,National Institute for Occupational Safety and Health,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_250,Minister of Labour and Foreign Employment,cabinetMinister,National Institute of Labour Studies,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_251,Minister of Labour and Foreign Employment,cabinetMinister,National Productivity Secretariat,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_252,Minister of Labour and Foreign Employment,cabinetMinister,Office of the Commissioner of Workmen's Compensation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_253,Minister of Labour and Foreign Employment,cabinetMinister,Shrama Vasana Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_254,Minister of Labour and Foreign Employment,cabinetMinister,Sri Lanka Foreign Employment Bureau,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_255,Minister of Mass Media,cabinetMinister,Associated Newspapers of Ceylon Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_256,Minister of Mass Media,cabinetMinister,Department of Government Information,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_257,Minister of Mass Media,cabinetMinister,Independent Television Network,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_258,Minister of Mass Media,cabinetMinister,Lanka Puwath Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_259,Minister of Mass Media,cabinetMinister,National Film Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_260,Minister of Mass Media,cabinetMinister,Public Performance Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_261,Minister of Mass Media,cabinetMinister,Right to Information Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_262,Minister of Mass Media,cabinetMinister,Selacine Media Solutions (PVT) LTD,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_263,Minister of Mass Media,cabinetMinister,Selacine Rupavahini Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_264,Minister of Mass Media,cabinetMinister,Sri Lanka Broadcasting Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_265,Minister of Mass Media,cabinetMinister,Sri Lanka Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_266,Minister of Mass Media,cabinetMinister,Sri Lanka Press Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_267,Minister of Mass Media,cabinetMinister,Sri Lanka Rupavahini Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_268,"Minister of Ports, Shipping and Aviation",cabinetMinister,Airport and Aviation Services (Sri Lanka) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_269,"Minister of Ports, Shipping and Aviation",cabinetMinister,Ceylon Shipping Corporation Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_270,"Minister of Ports, Shipping and Aviation",cabinetMinister,Civil Aviation Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_271,"Minister of Ports, Shipping and Aviation",cabinetMinister,Merchant Shipping Secretariat,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_272,"Minister of Ports, Shipping and Aviation",cabinetMinister,Sri Lanka Ports Authority and its Subsidiaries and Associates,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_273,"Minister of Ports, Shipping and Aviation",cabinetMinister,Sri Lankan Air Lines Limited and its subsidiaries,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_274,Minister of Power and Energy,cabinetMinister,Ceylon Electricity Company,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_275,Minister of Power and Energy,cabinetMinister,Polipto Lanka (Pvt) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_276,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,All District Secretariats and Divisional Secretariats,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_277,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Multi-purpose Development Task Force,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_278,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Official Languages,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_279,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Pensions,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_280,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Department of Registrar General,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_281,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Distance Learning Centre Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_282,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Service Pension Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_283,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Widowers' and Orphans' Pension Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_284,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Government Widows' and Orphans' Pension Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_285,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Local Loans and Development Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_286,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,National Human Resources Development Council of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_287,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,National Institute of Language Education and Training,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_288,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Official Languages Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_289,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Public Service Pensioners' Trust Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_290,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Sri Lanka Institute of Development Administration,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_291,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Sri Lanka Institute of Local Government,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_292,Minister of Public Security,cabinetMinister,Department of Immigration and Emigration,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_293,Minister of Public Security,cabinetMinister,Department of Registration of Persons,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_294,Minister of Public Security,cabinetMinister,National Dangerous Drugs Control Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_295,Minister of Public Security,cabinetMinister,National Police Academy,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_296,Minister of Public Security,cabinetMinister,Secretariat for Non-Governmental Organizations,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_297,Minister of Public Security,cabinetMinister,Sri Lanka Police,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_298,Minister of Sports and Youth Affairs,cabinetMinister,Department of Sports Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_299,Minister of Sports and Youth Affairs,cabinetMinister,National Sports Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_300,Minister of Sports and Youth Affairs,cabinetMinister,National Youth Corps,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_301,Minister of Sports and Youth Affairs,cabinetMinister,National Youth Services Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_302,Minister of Sports and Youth Affairs,cabinetMinister,National Youths Services Cooperative Society Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_303,Minister of Sports and Youth Affairs,cabinetMinister,Sugathadasa National Sports Complex Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_304,Minister of Technology,cabinetMinister,Centre of Excellence for Robotic Applications,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_305,Minister of Technology,cabinetMinister,Data Protection Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_306,Minister of Technology,cabinetMinister,Information and Communication Technology Agency and Allied Institutions,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_307,Minister of Technology,cabinetMinister,Sri Lanka Computer Emergency Readiness Team,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_308,Minister of Technology,cabinetMinister,Sri Lanka Standards Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_309,Minister of Technology,cabinetMinister,Telecommunication Regulatory Commission of Sri Lanka and Allied Institutions,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_310,Minister of Tourism and Lands,cabinetMinister,Department of Land Commissioner General,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_311,Minister of Tourism and Lands,cabinetMinister,Department of Land Settlement,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_312,Minister of Tourism and Lands,cabinetMinister,Department of Land Use Policy Planning,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_313,Minister of Tourism and Lands,cabinetMinister,Department of National Botanic Gardens,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_314,Minister of Tourism and Lands,cabinetMinister,Institute of Surveying and Mapping,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_315,Minister of Tourism and Lands,cabinetMinister,Land Acquisition Board of Review,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_316,Minister of Tourism and Lands,cabinetMinister,Land Reform Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_317,Minister of Tourism and Lands,cabinetMinister,Land Survey Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_318,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Convention Bureau,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_319,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Institute of Tourism and Hotel Management,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_320,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Survey Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_321,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Tourism Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_322,Minister of Tourism and Lands,cabinetMinister,Sri Lanka Tourism Promotion Bureau,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_323,"Minister of Trade, Commerce and Food Security",cabinetMinister,Consumer Affairs Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_324,"Minister of Trade, Commerce and Food Security",cabinetMinister,Cooperative Employees Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_325,"Minister of Trade, Commerce and Food Security",cabinetMinister,Cooperative Wholesale Establishment,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_326,"Minister of Trade, Commerce and Food Security",cabinetMinister,Department of Commerce,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_327,"Minister of Trade, Commerce and Food Security",cabinetMinister,Department of Cooperative Development (Registrar of Cooperative Societies),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_328,"Minister of Trade, Commerce and Food Security",cabinetMinister,"Department of Measurement Units, Standards and Services",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_329,"Minister of Trade, Commerce and Food Security",cabinetMinister,Food Commissioner's Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_330,"Minister of Trade, Commerce and Food Security",cabinetMinister,Lanka Sathosa Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_331,"Minister of Trade, Commerce and Food Security",cabinetMinister,Mahapola Trust Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_332,"Minister of Trade, Commerce and Food Security",cabinetMinister,National Institute of Cooperative Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_333,"Minister of Trade, Commerce and Food Security",cabinetMinister,National Intellectual Property Office of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_334,"Minister of Trade, Commerce and Food Security",cabinetMinister,Sri Lanka Accreditation Board for Conformity Assessment,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_335,Minister of Transport and Highways,cabinetMinister,Department of Sri Lanka Railways,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_336,Minister of Transport and Highways,cabinetMinister,Lakdiva Engineering Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_337,Minister of Transport and Highways,cabinetMinister,National Transport Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_338,Minister of Transport and Highways,cabinetMinister,Sri Lanka Transport Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_339,Minister of Urban Development and Housing,cabinetMinister,Building Material Corporation Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_340,Minister of Urban Development and Housing,cabinetMinister,National Physical Planning Department,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_341,Minister of Urban Development and Housing,cabinetMinister,Sri Lanka Land Development Corporation and its subsidiaries and related institutions,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_342,Minister of Urban Development and Housing,cabinetMinister,Urban Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_343,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Department of National Community Water Supply,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_344,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Estate Sector Self-Employment Revolving Fund,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_345,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,National Water Supply and Drainage Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_346,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,New Villages Development Authority for Plantation Region,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_347,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Plantation Human Development Trust,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_348,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Saumyamoorthi Thondaman Memorial Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_349,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Water Resources Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_350,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of Forest Conservation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_351,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of National Zoological Gardens,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_352,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Department of Wildlife Conservation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_353,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,State Timber Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_354,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Probation and Childcare Services,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_355,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Samurdhi Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_356,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Department of Social Services,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_357,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Child Protection Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_358,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Committee on Women,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_359,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Council for Elders and National Secretariat for Elders,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_360,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Council for Persons with Disabilities,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_361,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Institute of Social Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_362,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Secretariat for Early Childhood Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_363,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,National Secretariat for Persons with Disabilities,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_364,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Rural Development Training and Research Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_365,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Saubhagya Development Bureau,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_366,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Social Security Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_367,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Sri Lanka Women's Bureau,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_368,Non Cabinet Minister of Development Projects,stateMinister,Department of Information Technology Management,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_369,Non Cabinet Minister of Development Projects,stateMinister,Department of Project Management and Monitoring,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_370,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Chilaw Plantation Company Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_371,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Elkaduwa Plantation Company Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_372,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Janatha Estate Development Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_373,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Kalubovitiyana Tea Factory Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_374,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Kurunegala Plantation Company Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_375,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Sri Lanka State Plantation Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_376,State Minister of Fisheries,stateMinister,Cey-Nor Foundation Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_377,State Minister of Fisheries,stateMinister,Ceylon Fisheries Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_378,State Minister of Fisheries,stateMinister,National Aquatic Resources Research and Development Agency,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_379,"State Minister of Health, Women and Child Affairs",stateMinister,1990 Suwaseriya Foundation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_380,"State Minister of Health, Women and Child Affairs",stateMinister,National Authority on Tobacco and Alcohol,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_381,"State Minister of Health, Women and Child Affairs",stateMinister,Private Health Services Regulatory Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_382,"State Minister of Health, Women and Child Affairs",stateMinister,School of Medical Laboratory Technology,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_383,"State Minister of Health, Women and Child Affairs",stateMinister,Sri Jayewardenepura General Hospital,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_384,"State Minister of Health, Women and Child Affairs",stateMinister,Vijaya Kumaratunga Memorial Hospital,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_385,State Minister of Higher Education,stateMinister,"All State Universities, Postgraduate Institutions and other Institutions under the purview of University Grants Commission",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_386,State Minister of Higher Education,stateMinister,Buddhasravaka Bhikku University,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_387,State Minister of Higher Education,stateMinister,Buddhist and Pali University of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_388,State Minister of Higher Education,stateMinister,Sri Lanka Institute of Advanced Technological Education,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_389,State Minister of Higher Education,stateMinister,University Grants Commission,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_390,State Minister of Highways,stateMinister,Subsidiaries and affiliates under the Road Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_391,State Minister of Indigenous Medicine,stateMinister,Ayurveda Teaching and Research Hospitals,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_392,State Minister of Indigenous Medicine,stateMinister,Ayurvedic College and Hospital Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_393,State Minister of Indigenous Medicine,stateMinister,Ayurvedic Medical Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_394,State Minister of Indigenous Medicine,stateMinister,Department of Ayurveda,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_395,State Minister of Indigenous Medicine,stateMinister,"Homeopathy Hospital, Welisara",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_396,State Minister of Indigenous Medicine,stateMinister,Homeopathy Medical Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_397,State Minister of Indigenous Medicine,stateMinister,Sri Lanka Ayurvedic Drugs Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_398,State Minister of Mass Media,stateMinister,Department of Government Printing,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_399,State Minister of Mass Media,stateMinister,Department of Posts,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_400,State Minister of Mass Media,stateMinister,Sri Lanka Institute of Printing,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_401,State Minister of Power and Energy,stateMinister,Ceylon Electricity Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_402,State Minister of Power and Energy,stateMinister,Ceylon Petroleum Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_403,State Minister of Power and Energy,stateMinister,Ceylon Petroleum Storage Terminal Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_404,State Minister of Power and Energy,stateMinister,LTL Holdings (Pvt.) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_405,State Minister of Power and Energy,stateMinister,Lanka Coal Company (Pvt) Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_406,State Minister of Power and Energy,stateMinister,Lanka Electricity Company,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_407,State Minister of Power and Energy,stateMinister,Petroleum Development Authority of Sri Lanka,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_408,State Minister of Power and Energy,stateMinister,Sri Lanka Atomic Energy Board,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_409,State Minister of Power and Energy,stateMinister,Sri Lanka Atomic Energy Regulatory Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_410,State Minister of Power and Energy,stateMinister,Sri Lanka Sustainable Energy Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_411,State Minister of Power and Energy,stateMinister,Trinco Petroleum Terminal (Pvt) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_412,State Minister of Primary Industries,stateMinister,Ceylon Ceramics Corporation (Brick and Tiles Division),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_413,State Minister of Primary Industries,stateMinister,Gem and Jewellery Research and Training Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_414,State Minister of Primary Industries,stateMinister,Kahagolla Engineering Services Company Ltd. (KESCO),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_415,State Minister of Primary Industries,stateMinister,Kahatagaha Graphite Lanka Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_416,State Minister of Primary Industries,stateMinister,Lanka Ashok Leyland Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_417,State Minister of Primary Industries,stateMinister,Lanka Cement Ltd,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_418,State Minister of Primary Industries,stateMinister,Lanka Leyland Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_419,State Minister of Primary Industries,stateMinister,Lanka Phosphate Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_420,State Minister of Primary Industries,stateMinister,National Gem and Jewellery Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_421,State Minister of Primary Industries,stateMinister,National Paper Corporation Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_422,State Minister of Rural Road Development,stateMinister,Maga Neguma Section,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_423,State Minister of Rural Road Development,stateMinister,State Development and Construction Corporation,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_424,State Minister of Small and Medium Enterprises Development,stateMinister,Department of Textile Industries,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_425,State Minister of Small and Medium Enterprises Development,stateMinister,Lanka Salusala Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_426,State Minister of Small and Medium Enterprises Development,stateMinister,Lanka Textile Mills Emporium Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_427,State Minister of Small and Medium Enterprises Development,stateMinister,National Crafts Council,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_428,State Minister of Small and Medium Enterprises Development,stateMinister,National Design Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_429,State Minister of Small and Medium Enterprises Development,stateMinister,National Enterprise Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_430,State Minister of Small and Medium Enterprises Development,stateMinister,SME Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_431,State Minister of Small and Medium Enterprises Development,stateMinister,SME Venture Capital Company,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_432,State Minister of Small and Medium Enterprises Development,stateMinister,Sri Lanka Handicraft Board (Laksala),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_433,State Minister of Small and Medium Enterprises Development,stateMinister,Sri Lanka Institute of Textile and Apparels,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_434,State Minister of Small and Medium Enterprises Development,stateMinister,Timber-related Design Centre,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_435,State Minister of Sports and Youth Affairs,stateMinister,Institute of Sports Medicine,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_436,State Minister of Sports and Youth Affairs,stateMinister,"Mahinda Rajapaksa International Sports Complex, Diyagama",department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_437,State Minister of Sports and Youth Affairs,stateMinister,National Centre for Leadership Development,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_438,State Minister of Sports and Youth Affairs,stateMinister,National Institute of Sports Science,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_439,State Minister of Sports and Youth Affairs,stateMinister,Sri Lanka Anti-doping Agency,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_440,State Minister of Transport,stateMinister,Department of Motor Traffic,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_441,State Minister of Transport,stateMinister,Lakdiva Engineering Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_442,State Minister of Transport,stateMinister,National Council for Road Safety,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_443,State Minister of Transport,stateMinister,National Transport Medical Institute,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_444,State Minister of Urban Development and Housing,stateMinister,Aruwakkalu Garbage Project,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_445,State Minister of Urban Development and Housing,stateMinister,Condominium Management Authority (Common Amenities Board),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_446,State Minister of Urban Development and Housing,stateMinister,Construction Industry Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_447,State Minister of Urban Development and Housing,stateMinister,Department of Buildings,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_448,State Minister of Urban Development and Housing,stateMinister,Department of Coast Conservation and Coastal Resource Management,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_449,State Minister of Urban Development and Housing,stateMinister,Department of Government Factories,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_450,State Minister of Urban Development and Housing,stateMinister,Hotel Developers (Lanka) PLC (PQ 143),department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_451,State Minister of Urban Development and Housing,stateMinister,Marine Environment Protection Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_452,State Minister of Urban Development and Housing,stateMinister,National Housing Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_453,State Minister of Urban Development and Housing,stateMinister,Ocean View Development (Pvt) Ltd.,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_454,State Minister of Urban Development and Housing,stateMinister,Selendiva Investments Limited,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_455,State Minister of Urban Development and Housing,stateMinister,Urban Settlement Development Authority,department,AS_DEPARTMENT,2024-09-25
+2403-38-01_tr_456,Anura Kumara Dissanayake,citizen,Minister of Defence,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_457,Anura Kumara Dissanayake,citizen,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_458,Anura Kumara Dissanayake,citizen,Minister of Technology,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_459,Anura Kumara Dissanayake,citizen,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_460,Anura Kumara Dissanayake,citizen,"Minister of Ports, Shipping and Aviation",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_461,Anura Kumara Dissanayake,citizen,Minister of Investment Promotion,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_462,Anura Kumara Dissanayake,citizen,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_463,Anura Kumara Dissanayake,citizen,Minister of Fisheries,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_464,Anura Kumara Dissanayake,citizen,Minister of Education,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_465,Anura Kumara Dissanayake,citizen,Minister of Transport and Highways,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_466,Anura Kumara Dissanayake,citizen,Minister of Mass Media,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_467,Anura Kumara Dissanayake,citizen,Minister of Health,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_468,Anura Kumara Dissanayake,citizen,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_469,Anura Kumara Dissanayake,citizen,Minister of Agriculture and Plantation Industries,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_470,Anura Kumara Dissanayake,citizen,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_471,Anura Kumara Dissanayake,citizen,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_472,Anura Kumara Dissanayake,citizen,Minister of Tourism and Lands,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_473,Anura Kumara Dissanayake,citizen,Minister of Industries,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_474,Anura Kumara Dissanayake,citizen,Minister of Urban Development and Housing,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_475,Anura Kumara Dissanayake,citizen,Minister of Foreign Affairs,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_476,Anura Kumara Dissanayake,citizen,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_477,Anura Kumara Dissanayake,citizen,Minister of Power and Energy,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_478,Anura Kumara Dissanayake,citizen,Minister of Environment,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_479,Anura Kumara Dissanayake,citizen,Minister of Sports and Youth Affairs,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_480,Anura Kumara Dissanayake,citizen,Minister of Irrigation,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_481,Anura Kumara Dissanayake,citizen,Minister of Labour and Foreign Employment,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_482,Anura Kumara Dissanayake,citizen,Minister of Public Security,cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_483,Anura Kumara Dissanayake,citizen,"Minister of Trade, Commerce and Food Security",cabinetMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_484,Anura Kumara Dissanayake,citizen,State Minister of Higher Education,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_485,Anura Kumara Dissanayake,citizen,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_486,Anura Kumara Dissanayake,citizen,State Minister of Sports and Youth Affairs,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_487,Anura Kumara Dissanayake,citizen,Non Cabinet Minister of Development Projects,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_488,Anura Kumara Dissanayake,citizen,"State Minister of Health, Women and Child Affairs",stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_489,Anura Kumara Dissanayake,citizen,State Minister of Labour,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_490,Anura Kumara Dissanayake,citizen,State Minister of Trade and Environment,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_491,Anura Kumara Dissanayake,citizen,"State Minister of Provincial Councils, Local Government and Environment",stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_492,Anura Kumara Dissanayake,citizen,State Minister of Irrigation and Water Supply,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_493,Anura Kumara Dissanayake,citizen,State Minister of Plantation Industries and Mahaweli Development,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_494,Anura Kumara Dissanayake,citizen,State Minister of Ports and Aviation,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_495,Anura Kumara Dissanayake,citizen,State Minister of Social Empowerment,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_496,Anura Kumara Dissanayake,citizen,State Minister of Primary Industries,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_497,Anura Kumara Dissanayake,citizen,State Minister of Tourism,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_498,Anura Kumara Dissanayake,citizen,State Minister of Rural Road Development,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_499,Anura Kumara Dissanayake,citizen,State Minister of Women and Child Affairs,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_500,Anura Kumara Dissanayake,citizen,State Minister of Education,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_501,Anura Kumara Dissanayake,citizen,State Minister of Home Affairs,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_502,Anura Kumara Dissanayake,citizen,State Minister of Rural Economy,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_503,Anura Kumara Dissanayake,citizen,State Minister of Livestock Development,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_504,Anura Kumara Dissanayake,citizen,State Minister of Small and Medium Enterprises Development,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_505,Anura Kumara Dissanayake,citizen,State Minister of Fisheries,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_506,Anura Kumara Dissanayake,citizen,State Minister of Indigenous Medicine,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_507,Anura Kumara Dissanayake,citizen,State Minister of Justice and Prison Affairs,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_508,Anura Kumara Dissanayake,citizen,State Minister of Mass Media,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_509,Anura Kumara Dissanayake,citizen,State Minister of Highways,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_510,Anura Kumara Dissanayake,citizen,State Minister of Water Supply,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_511,Anura Kumara Dissanayake,citizen,State Minister of Power and Energy,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_512,Anura Kumara Dissanayake,citizen,State Minister of Foreign Affairs,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_513,Anura Kumara Dissanayake,citizen,State Minister of Piriven Education,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_514,Anura Kumara Dissanayake,citizen,State Minister of Defence,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_515,Anura Kumara Dissanayake,citizen,State Minister of Urban Development and Housing,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_516,Anura Kumara Dissanayake,citizen,State Minister of Agriculture,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_517,Anura Kumara Dissanayake,citizen,State Minister of Technology,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_518,Anura Kumara Dissanayake,citizen,State Minister of Investment Promotion,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_519,Anura Kumara Dissanayake,citizen,State Minister of Transport,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_520,Anura Kumara Dissanayake,citizen,State Minister of Finance,stateMinister,AS_MINISTER,2024-09-25
+2403-38-01_tr_521,Anura Kumara Dissanayake,citizen,State Minister of Foreign Employment Promotion,stateMinister,AS_MINISTER,2024-09-25

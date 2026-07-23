@@ -28,13 +28,5 @@ transaction_id,old_parent,old_president_name,new_parent,new_president_name,child
 2289-34_tr_27,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Health,cabinetMinister,2022-07-20
 2289-34_tr_28,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Urban Development and Housing,cabinetMinister,2022-07-20
 2289-34_tr_29,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,"Minister of Buddha Sasana, Religious and Cultural Affairs",cabinetMinister,2022-07-20
-2289-34_tr_30,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Tea Industry Development,stateMinister,2022-07-20
-2289-34_tr_31,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Transport Services Management,stateMinister,2022-07-20
-2289-34_tr_32,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Ports Development Affairs,stateMinister,2022-07-20
-2289-34_tr_33,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Mahaweli Development,stateMinister,2022-07-20
-2289-34_tr_34,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Defence,cabinetMinister,2022-07-20
-2289-34_tr_35,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Education,cabinetMinister,2022-07-20
-2289-34_tr_36,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Industrial Export and Investment Promotion,cabinetMinister,2022-07-20
-2289-34_tr_37,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Public Administration and Home Affairs,stateMinister,2022-07-20
-2289-34_tr_38,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Education Services,stateMinister,2022-07-20
-2289-34_tr_39,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,State Minister of Public Management and Accounting,stateMinister,2022-07-20
+2289-34_tr_30,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Defence,cabinetMinister,2022-07-20
+2289-34_tr_31,Gotabaya Rajapaksa,Gotabaya Rajapaksa,Ranil Wickremesinghe,Ranil Wickremesinghe,Minister of Education,cabinetMinister,2022-07-20
