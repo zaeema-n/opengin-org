@@ -1,33 +1,67 @@
 transaction_id,parent,parent_type,child,child_type,rel_type,date
-2403-03-02_tr_30,Minister of Defence,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_31,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_32,Minister of Technology,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_33,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_34,"Minister of Ports, Shipping and Aviation",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_35,Minister of Investment Promotion,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_36,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_37,Minister of Fisheries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_38,Minister of Education,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_39,Minister of Transport and Highways,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_40,Minister of Mass Media,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_41,Minister of Health,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_42,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_43,Minister of Agriculture and Plantation Industries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_44,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_45,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_46,Minister of Tourism and Lands,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_47,Minister of Industries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_48,Minister of Urban Development and Housing,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_49,Minister of Foreign Affairs,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_50,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_51,Minister of Power and Energy,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_52,Minister of Environment,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_53,Minister of Sports and Youth Affairs,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_54,Minister of Irrigation,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_55,Minister of Labour and Foreign Employment,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_56,Minister of Public Security,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_57,"Minister of Trade, Commerce and Food Security",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_58,State Minister of Higher Education,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_59,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_60,State Minister of Sports and Youth Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
-2403-03-02_tr_61,Non Cabinet Minister of Development Projects,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_58,Minister of Defence,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_59,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_60,Minister of Technology,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_61,"Minister of Women, Child Affairs and Social Empowerment",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_62,"Minister of Ports, Shipping and Aviation",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_63,Minister of Investment Promotion,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_64,"Minister of Public Administration, Home Affairs, Provincial Councils and Local Government",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_65,Minister of Fisheries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_66,Minister of Education,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_67,Minister of Transport and Highways,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_68,Minister of Mass Media,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_69,Minister of Health,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_70,Minister of Water Supply and Estate Infrastructure Development,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_71,Minister of Agriculture and Plantation Industries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_72,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_73,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_74,Minister of Tourism and Lands,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_75,Minister of Industries,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_76,Minister of Urban Development and Housing,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_77,Minister of Foreign Affairs,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_78,"Minister of Buddhasasana, Religious and Cultural Affairs",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_79,Minister of Power and Energy,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_80,Minister of Environment,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_81,Minister of Sports and Youth Affairs,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_82,Minister of Irrigation,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_83,Minister of Labour and Foreign Employment,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_84,Minister of Public Security,cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_85,"Minister of Trade, Commerce and Food Security",cabinetMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_86,State Minister of Higher Education,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_87,Non Cabinet Minister of State Plantation Enterprises Reforms,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_88,State Minister of Sports and Youth Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_89,Non Cabinet Minister of Development Projects,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_90,"State Minister of Health, Women and Child Affairs",stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_91,State Minister of Labour,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_92,State Minister of Trade and Environment,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_93,"State Minister of Provincial Councils, Local Government and Environment",stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_94,State Minister of Irrigation and Water Supply,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_95,State Minister of Plantation Industries and Mahaweli Development,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_96,State Minister of Ports and Aviation,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_97,State Minister of Social Empowerment,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_98,State Minister of Primary Industries,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_99,State Minister of Tourism,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_100,State Minister of Rural Road Development,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_101,State Minister of Women and Child Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_102,State Minister of Education,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_103,State Minister of Home Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_104,State Minister of Rural Economy,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_105,State Minister of Livestock Development,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_106,State Minister of Small and Medium Enterprises Development,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_107,State Minister of Fisheries,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_108,State Minister of Indigenous Medicine,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_109,State Minister of Justice and Prison Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_110,State Minister of Mass Media,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_111,State Minister of Highways,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_112,State Minister of Water Supply,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_113,State Minister of Power and Energy,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_114,State Minister of Foreign Affairs,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_115,State Minister of Piriven Education,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_116,State Minister of Defence,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_117,State Minister of Urban Development and Housing,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_118,State Minister of Agriculture,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_119,State Minister of Technology,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_120,State Minister of Investment Promotion,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_121,State Minister of Transport,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_122,State Minister of Finance,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
+2403-03-02_tr_123,State Minister of Foreign Employment Promotion,stateMinister,Anura Kumara Dissanayake,citizen,AS_APPOINTED,2024-09-23
