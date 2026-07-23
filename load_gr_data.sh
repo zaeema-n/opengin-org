@@ -112,6 +112,8 @@
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2021-12-02/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2022-01-09/"
 
+./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2022-01-04/" -type person
+
 ./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2022-02-07/" -type person
 
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2022-02-23/"
