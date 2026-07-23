@@ -7,24 +7,22 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2289-34-2_tr_06,Minister of Tourism and Lands,cabinetMinister,Nalaka Jude Hareen Fernando,citizen,AS_APPOINTED,2022-07-20
 2289-34-2_tr_07,"Minister of Justice, Prisons Affairs and Constitutional Reforms",cabinetMinister,Wijayadasa Rajapaksh,citizen,AS_APPOINTED,2022-07-20
 2289-34-2_tr_08,Minister of Transport and Highways,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_09,"Minister of Ports, Shipping and Aviation",cabinetMinister,Nimal Siripala de Silva,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_10,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_11,State Minister of Highways,stateMinister,Vijitha Berugoda,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_12,Minister of Plantation Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_13,"Minister of Public Administration, Home Affairs, Provincial Councils & Local Government",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_14,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_15,Minister of Foreign Affairs,cabinetMinister,Gamini Lakshman Pieris,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_16,Minister of Public Security,cabinetMinister,Tiran Alles,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_17,Minister of Mass Media,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_18,Minister of Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_19,Minister of Water Supply,cabinetMinister,Keheliya Rambukwella,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_20,Minister of Fisheries,cabinetMinister,Douglas Devananda,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_21,Minister of Irrigation,cabinetMinister,Anuruddha Ranasinghe Arachchige Roshan,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_22,Minister of Agriculture,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_23,Minister of Environment,cabinetMinister,Ahamed Zenulabdeen Naseer,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_24,Minister of Health,cabinetMinister,Keheliya Rambukwella,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_25,Minister of Urban Development and Housing,cabinetMinister,Prasanna Ranatunga,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_26,"Minister of Buddha Sasana, Religious and Cultural Affairs",cabinetMinister,Vidura Wickramanayaka,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_27,Minister of Defence,cabinetMinister,Gotabaya Rajapaksa,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_28,Minister of Education,cabinetMinister,Achchige Don Susil Premajayanth,citizen,AS_APPOINTED,2022-07-20
-2289-34-2_tr_29,Minister of Industrial Export and Investment Promotion,cabinetMinister,Prasanna Ranatunga,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_09,"Minister of Finance, Economic Stabilization and National Policies",cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_10,State Minister of Highways,stateMinister,Vijitha Berugoda,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_11,Minister of Plantation Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_12,"Minister of Public Administration, Home Affairs, Provincial Councils & Local Government",cabinetMinister,Dinesh Chandra Rupasingha Gunawardena,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_13,Minister of Wildlife and Forest Resources Conservation,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_14,Minister of Foreign Affairs,cabinetMinister,Gamini Lakshman Pieris,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_15,Minister of Public Security,cabinetMinister,Tiran Alles,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_16,Minister of Mass Media,cabinetMinister,Bandula Gunawardena,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_17,Minister of Industries,cabinetMinister,Ramesh Pathirana,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_18,Minister of Water Supply,cabinetMinister,Keheliya Rambukwella,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_19,Minister of Fisheries,cabinetMinister,Douglas Devananda,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_20,Minister of Irrigation,cabinetMinister,Anuruddha Ranasinghe Arachchige Roshan,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_21,Minister of Agriculture,cabinetMinister,Mahinda Amaraweera,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_22,Minister of Environment,cabinetMinister,Ahamed Zenulabdeen Naseer,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_23,Minister of Health,cabinetMinister,Keheliya Rambukwella,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_24,Minister of Urban Development and Housing,cabinetMinister,Prasanna Ranatunga,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_25,"Minister of Buddha Sasana, Religious and Cultural Affairs",cabinetMinister,Vidura Wickramanayaka,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_26,Minister of Defence,cabinetMinister,Gotabaya Rajapaksa,citizen,AS_APPOINTED,2022-07-20
+2289-34-2_tr_27,Minister of Education,cabinetMinister,Achchige Don Susil Premajayanth,citizen,AS_APPOINTED,2022-07-20
