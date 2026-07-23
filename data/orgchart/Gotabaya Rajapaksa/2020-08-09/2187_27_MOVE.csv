@@ -154,7 +154,7 @@ transaction_id,old_parent,new_parent,child,type,date,old_president_name,new_pres
 2187-27_tr_222,Minister of Agriculture,Minister of Irrigation,Water Resources Board,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_230,Minister of Lands,"State Minister of Land Management, State Enterprises Land and Property Development",Department of Land Use Policy Planning,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_231,State Minister of Lands and Land Development,"State Minister of Land Management, State Enterprises Land and Property Development",Department of Land Settlement,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2187-27_tr_231,State Minister of Lands and Land Development,"State Minister of Land Management, State Enterprises Land and Property Development",Land Reform Commission,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_231,State Minister of Lands and Land Development,"Minister of Lands",Land Reform Commission,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_234,State Minister of Fisheries and Inland Fisheries Industry,"State Minister of Ornamental Fish, Inland Fish and Prawn Farming, Fishery Harbour Development, Multiday Fishing Activities and Fish Exports",National Aquaculture Development Authority,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_235,Minister of Fisheries,"State Minister of Ornamental Fish, Inland Fish and Prawn Farming, Fishery Harbour Development, Multiday Fishing Activities and Fish Exports",Ceylon Fisheries Harbour Corporation,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_236,Minister of Fisheries,"State Minister of Ornamental Fish, Inland Fish and Prawn Farming, Fishery Harbour Development, Multiday Fishing Activities and Fish Exports",Cey-Nor Foundation Ltd.,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
@@ -268,7 +268,6 @@ transaction_id,old_parent,new_parent,child,type,date,old_president_name,new_pres
 2187-27_tr_366,,"Minister of Irrigation",Department of Irrigation,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_366,,"State Minister of Livestock, Farm Promotion and Dairy and Egg Related Industries",Department of Animal Production and Health,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_366,,"State Minister of Livestock, Farm Promotion and Dairy and Egg Related Industries",National Livestock Development Board and affiliated companies,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
-2187-27_tr_366,,"State Minister of Livestock, Farm Promotion and Dairy and Egg Related Industries",Milco (Pvt.) Ltd,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_366,,"State Minister of Livestock, Farm Promotion and Dairy and Egg Related Industries",Mahaweli Livestock Enterprise Limited,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_367,,"Minister of Trade",Lanka Sathosa Ltd.,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_368,,"Minister of Trade",Co-operative Wholesale Establishment,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
@@ -276,3 +275,22 @@ transaction_id,old_parent,new_parent,child,type,date,old_president_name,new_pres
 2187-27_tr_370,,Minister of Defence,National Authority for the implementation of Chemical Weapons Convention,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_371,,Minister of Defence,Api Wenuwen Api Fund,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
 2187-27_tr_372,,"State Minister of Internal Security, Home Affairs and Disaster Management",National Police Academy,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_373,,"Minister of Education",National Library and Documentation Services Board,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_374,,"Minister of Education",Sri Lanka Publication Development Bureau,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_375,,"Minister of Education",Department of Educational Publications,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_376,,"Minister of Education",State Printing Corporation,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_377,,"Minister of Transport",Department of Sri Lanka Railways,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_378,,"State Minister of Batik, Handloom and Local Apparel Products",Sri Lanka Institute of Textile and Apparels,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_379,,"State Minister of Batik, Handloom and Local Apparel Products",Department of Textile Industries,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_380,,"State Minister of Batik, Handloom and Local Apparel Products",Lanka Textile Mills Emporium Ltd.,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_381,,"State Minister of Batik, Handloom and Local Apparel Products",Lanka Salusala Ltd.,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_382,,"State Minister of Vehicle Regulation, Bus Transport Services and Train Compartments and Motor Car Industry",Lakdiva Engineering Ltd.,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_383,,"State Minister of Vehicle Regulation, Bus Transport Services and Train Compartments and Motor Car Industry",National Transport Medical Institute,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_382,,"State Minister of Vehicle Regulation, Bus Transport Services and Train Compartments and Motor Car Industry",Department of Motor Traffic,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_382,,"Minister of Tourism",Sri Lanka Tourism Promotion Bureau,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_382,,"Minister of Tourism",Sri Lanka Tourism Development Authority,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+2187-27_tr_382,,"Minister of Tourism",Sri Lanka Institute of Tourism and Hotel Management,department,2020-08-09,Gotabaya Rajapaksa,Gotabaya Rajapaksa
+
+
+
+

@@ -58,4 +58,16 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2187-27_tr_366,"State Minister of Urban Development, Coast Conservation, Waste Disposal and Community Cleanliness",stateMinister,"Sri Lanka Land Development Corporation",department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_358,"State Minister of Technology and Innovations",stateMinister,"Sri Lanka Inventors Fund",department,AS_DEPARTMENT,2020-08-09
 2187-27_tr_359,"State Minister of Technology and Innovations",stateMinister,"Blue Green Growth Secretariat",department,AS_DEPARTMENT,2020-08-09
-
+2187-27_tr_359,"Minister of Industrial Export and Investment Promotion",cabinetMinister,"Assets vested to the Secretary to the Treasury, under the Act, No. 43 of 2011",department,AS_DEPARTMENT,2020-08-09
+2187-27_tr_360,Gotabaya Rajapaksa,citizen,"Minister of Industrial Export and Investment Promotion",cabinetMinister,AS_MINISTER,2020-08-09
+2187-27_tr_377,Gotabaya Rajapaksa,citizen,"State Minister of Education Services",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_378,Gotabaya Rajapaksa,citizen,"State Minister of Mahaweli Development",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_379,Gotabaya Rajapaksa,citizen,"State Minister of Ports Development Affairs",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_380,Gotabaya Rajapaksa,citizen,"State Minister of Public Administration and Home Affairs",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_381,Gotabaya Rajapaksa,citizen,"State Minister of Public Management and Accounting",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_383,Gotabaya Rajapaksa,citizen,"State Minister of Transport Services Management",stateMinister,AS_MINISTER,2020-08-09
+2187-27_tr_384,Minister of Agriculture,stateMinister,National Food Promotion Board,department,AS_DEPARTMENT,2020-08-09
+2187-27_tr_385,"Minister of Buddha Sasana, Religious and Cultural Affairs",stateMinister,Sri Lanka Foundation,department,AS_DEPARTMENT,2020-08-09
+2187-27_tr_386,"Minister of Defence",stateMinister,Lanka Logistics Limited,department,AS_DEPARTMENT,2020-08-09
+2187-27_tr_387,"Minister of Education",stateMinister,National Authority on Teachers Education,department,AS_DEPARTMENT,2020-08-09
+2187-27_tr_388,"Minister of Industries",stateMinister,Bogala Graphite Lanka Limited,department,AS_DEPARTMENT,2020-08-09
