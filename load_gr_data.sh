@@ -105,6 +105,8 @@
 
 ./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2021-09-09/" -type person
 
+./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2021-10-04/" -type person
+
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2021-10-06/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2021-11-17/"
 ./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2021-12-02/"
