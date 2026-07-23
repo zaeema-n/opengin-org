@@ -166,5 +166,7 @@
 
 ./orgchart -data "$(pwd)/data/people/Gotabaya Rajapaksa/2022-07-07/" -type person
 
+./orgchart -data "$(pwd)/data/orgchart/Gotabaya Rajapaksa/2022-07-14/"
+
 
 
