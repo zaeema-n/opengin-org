@@ -1,0 +1,5 @@
+transaction_id,parent,parent_type,child,child_type,rel_type,date
+2156-03_tr_16,State Minister of Development Banks and Loans,stateMinister,Lanka Puthra Development Bank,department,AS_DEPARTMENT,2019-12-30
+2156-03_tr_17,State Minister of Development Banks and Loans,stateMinister,Regional Development Bank,department,AS_DEPARTMENT,2019-12-30
+2156-03_tr_18,State Minister of Development Banks and Loans,stateMinister,State Mortgage and Investment Bank,department,AS_DEPARTMENT,2019-12-30
+2156-03_tr_19,State Minister of Development Banks and Loans,stateMinister,Housing Development Finance Corporation,department,AS_DEPARTMENT,2019-12-30

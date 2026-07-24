@@ -1,0 +1,4 @@
+transaction_id,parent,parent_type,child,child_type,rel_type,date
+2397-41-1_tr_04,Minister of Tourism and Lands,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-08-14
+2397-41-1_tr_05,Minister of Sports and Youth Affairs,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-08-14
+2397-41-1_tr_06,Minister of Labour and Foreign Employment,cabinetMinister,Ranil Wickremesinghe,citizen,AS_APPOINTED,2024-08-21

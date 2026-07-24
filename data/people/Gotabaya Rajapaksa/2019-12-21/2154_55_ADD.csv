@@ -14,7 +14,6 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2154-55_tr_13,State Minister of Indigenous Medicine Services,stateMinister,Piyankara Jayaratne,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_14,State Minister of Education Services,stateMinister,Ranjith Siyambalapitiya,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_15,State Minister of Power,stateMinister,Mahindananda Aluthgamage,citizen,AS_APPOINTED,2019-12-21
-2154-55_tr_16,State Minister of Youth Affairs,stateMinister,Duminda Dissanayake,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_17,State Minister of Energy,stateMinister,Rohitha Abeygunawardene,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_18,State Minister of Industries,stateMinister,Dayasiri Jayasekara,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_19,State Minister of Public Management and Accounting,stateMinister,Lasantha Alagiyawanna,citizen,AS_APPOINTED,2019-12-21
@@ -32,7 +31,7 @@ transaction_id,parent,parent_type,child,child_type,rel_type,date
 2154-55_tr_31,State Minister of Highways Development,stateMinister,Lohan Ratwatte,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_32,State Minister of Wildlife Resources,stateMinister,Wimalaweera Dissanayake,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_33,State Minister of Environment,stateMinister,Jayantha Samaraweera,citizen,AS_APPOINTED,2019-12-21
-2154-55_tr_34,State Minister of Fisheries and Inland Fisheries Industry,stateMinister,Sanath Nishantha Perera,citizen,AS_APPOINTED,2019-12-21
+2154-55_tr_34,State Minister of Fisheries and Inland Fisheries Industry,stateMinister,Sanath Nishantha,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_35,State Minister of Social Security,stateMinister,Tharaka Balasuriya,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_36,State Minister of Community Development,stateMinister,Nimal Lanza,citizen,AS_APPOINTED,2019-12-21
 2154-55_tr_37,State Minister of Tea Industry Development,stateMinister,Kanchana Wijesekara,citizen,AS_APPOINTED,2019-12-21
